@@ -1,0 +1,49 @@
+.contato_titulo,
+.contato_texto {
+    color: var(--cor_fundo);
+}
+
+.contato_titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contato_texto {
+    margin: 1em 0;
+}
+
+
+.contato_link img{
+    margin: 0 42%;
+    width: 15%;
+}
+
+.contato_email {
+    color : var(--cor_fundo);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+@media screen and (min-width:1024px) {
+    .contato_titulo {
+        font-size: 2.5rem;
+    }
+
+    .contato_texto {
+        font-size: 1.5rem;
+    }
+
+    .contato_link img {
+        width: 100%;
+    }
+
+    .contato_email {
+        font-size: 1.8rem;
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (min-width:1728px){
+    
+}

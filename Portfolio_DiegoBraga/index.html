@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraBooks</title>
+    <link rel="stylesheet" href="reset.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+<!--Parte sobre o Cabeçalho-->
+    <!--Parte sobre o botão de interação na versão mobile-->
+   <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id = "menu" class="container_botao">
+            <label for="menu" class="container_rotulo">
+                <span class="cabeçalho__menu-hamburguer container_imagem"></span>
+            </label>
+            <ul class="lista_menu">
+                <li class="lista_menu_item">
+                    <a class = "lista_menu_link" href="#banner">Sobre Mim</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a class = "lista_menu_link" href="#">Projetos</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a class = "lista_menu_link" href="#contato">Contato</a>
+                </li>
+            </ul>
+            
+            <h1 class="container_titulo"><b class="container_titulo_negrito">Portfólio</b></h1>
+        </div>
+
+        <!--Parte sobre o botão de interação na versão tablet-->
+
+        <ul class="opcoes">
+            <li class="opcoes_item"><a class = "opcoes_link" href = "#banner">Sobre</a></li>
+            <!-- <input type="checkbox" id ="opcoes_menu" class = "opcoes_botao">
+            <label for="opcoes_menu" class="opcoes_menu_rotulo">
+                <li class="opcoes_item">Sobre</li>
+            </label>--> 
+            <!--<ul class="lista_menu">
+                <li class="lista_menu_item">
+                    <a class = "lista_menu_link" href="#">Programação</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a class = "lista_menu_link" href="#">Front-End</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a class = "lista_menu_link" href="#">Infraestrutura</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a class = "lista_menu_link" href="#">Business</a>
+                </li>
+                <li class="lista_menu_item">
+                    <a class = "lista_menu_link" href="#">Design & UX</a>
+                </li>
+            </ul>->
+
+            <!--Menu do modo tablet-->            
+            <li class="opcoes_item"><a class = "opcoes_link" href = "#">Projetos</a></li>
+            <li class="opcoes_item"><a class = "opcoes_link" href = "#contato">Contato</a></li>
+        </ul>
+
+        <!--Menu do modo mobile em formato de ícones-->  
+        <div class="troca_dark">     
+            <input type="button" id = "btn_dark">
+            <label for="btn_dark" class="tema"></label>
+            <h2 class="btn_texto">Dark Mode</h2>
+        </div>
+   </header>
+   <main>
+        <section class="objetivo">
+            <h2 class="objetivo_titulo">Conheça o <b>autor</b> e seus <b>projetos</b></h2>
+            <p class ="objetivo_texto">Entenda o contexto do autor, a escolha dos projetos e seus objetivos.</p>
+        </section>
+
+        <h2 class="banner_titulo" id ="banner">Sobre Mim</h2>
+
+        <section class="banner">
+            <div class="sobre">
+                <p class="banner_texto">Formado em Economia, tendo realizado diversos cursos na área de dados.</p>
+                <p class="banner_texto">Hard Skills: Excel, VBA, Python, SQL, Pyspark, Power BI, AWS.</p>
+                <p class="banner_texto">Soft Skills: Bom relacionamento interpessoal, boa comunicação, objetividade e atenção a prazos.</p>
+                <p class="banner_texto">Buscando inserção na área de dados, através de estudo contínuo e resolução de cases.</p>
+            </div>
+            <img src="imagens/foto_perfil_mobile.png" alt="Foto Perfil - Diego Braga" class="banner_imagem">       
+        </section> 
+
+        <div class = "sobre_infos">
+            <p class="banner_texto info">Para mais informações:</p>
+            <a class = "sobre_link" href="https://www.linkedin.com/in/diego-braga-254960160/"><img src="imagens/linkedin.png">Linkedin</a>
+            <a class = "sobre_link" href="https://github.com/diegobragagomes"><img src="imagens/github.png">GitHub</a>
+        </div> 
+
+        <section class="objetivo">
+            <h2 class="objetivo_titulo"><b>Principais Projetos</b></h2>
+        </section>
+        
+        
+            <div class="card">
+                <div class="card_descricao">
+                    <div class="descricao">
+                        <h2 class="descricao_titulo">Credit Card Transaction Analysis</h2>
+                        <h3 class="descricao_titulo-livro">Análise de Dados / Ciência de Dados</h3>
+                        <p class="descricao_texto">Análise de dados da área de Recursos Humanos, focando-se nas características que são passíveis de levar ao churn.</p>
+                    </div>
+                    <img class = "descricao_imagem" src="imagens/hr.jpg" alt="Foto de Escritora">
+                </div>
+                
+                <div class="card_botoes">
+                    <ul class="botoes">
+                        <li class="botoes_item"><img src="imagens/icons8-python-48.png" alt="Favoritos"></li>
+                        <li class="botoes_item"><img src="imagens/icons8-amazon-web-services-48.png" alt="Adicionar ao Carrinho"></li>
+                        <li class="botoes_item"><img src="imagens/metabase_logo_icon_168103_big.png" alt="Adicionar ao Carrinho"></li>
+                    </ul>
+                    <a class ="botoes_ancora" href="#">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+            <div class="card card_oposto">
+                <div class="card_descricao img_oposta">
+                    <div class="descricao">
+                        <h2 class="descricao_titulo">Credit Card Transaction Analysis</h2>
+                        <h3 class="descricao_titulo-livro">Análise de Dados / Ciência de Dados</h3>
+                        <p class="descricao_texto">Análise de dados da área de Recursos Humanos, focando-se nas características que são passíveis de levar ao churn. </p>
+                    </div>
+                    <img class = "descricao_imagem" src="imagens/credit_card.jpg" alt="Foto de Escritora">
+                </div>
+
+                <div class="card_botoes">
+                    <ul class="botoes">
+                        <li class="botoes_item"><img src="imagens/icons8-python-48.png" alt="Favoritos"></li>
+                        <li class="botoes_item"><img src="imagens/icons8-amazon-web-services-48.png" alt="Adicionar ao Carrinho"></li>
+                        <li class="botoes_item"><img src="imagens/metabase_logo_icon_168103_big.png" alt="Adicionar ao Carrinho"></li>
+                    </ul>
+                    <a class ="botoes_ancora" href="#">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card_descricao">
+                <div class="descricao">
+                    <h2 class="descricao_titulo">Credit Card Transaction Analysis</h2>
+                    <h3 class="descricao_titulo-livro">Análise de Dados / Ciência de Dados</h3>
+                    <p class="descricao_texto">Análise de dados da área de Recursos Humanos, focando-se nas características que são passíveis de levar ao churn. </p>
+                </div>
+                <img class = "descricao_imagem" src="imagens/sales.jpg" alt="Foto de Escritora">
+            </div>
+
+            <div class="card_botoes">
+                <ul class="botoes">
+                    <li class="botoes_item"><img src="imagens/icons8-python-48.png" alt="Favoritos"></li>
+                    <li class="botoes_item"><img src="imagens/icons8-amazon-web-services-48.png" alt="Adicionar ao Carrinho"></li>
+                    <li class="botoes_item"><img src="imagens/metabase_logo_icon_168103_big.png" alt="Adicionar ao Carrinho"></li>
+                </ul>
+                <a class ="botoes_ancora" href="#">Saiba mais</a>
+            </div>
+        </div>
+    </div>
+
+
+    </section>
+
+    
+
+    <section class="objetivo" id="contato">
+        <div class="contato_descricao">
+            <h2 class="contato_titulo">Contate-me!</h2>
+            <p class="contato_texto">Para maiores informações ou contatos profissionais.</p>
+        </div>
+        <a href="mailto:diegobragagomes@hotmail.com" class="contato_link"><img src="imagens/email.png" alt="Link para e-mail"></a>
+        <p class="contato_email">E-mail</p>
+    </section>
+
+    <hr/>
+
+   <footer class="rodape">
+
+    <h2 class="rodape_titulo">Coypright &copy; 2023. Todos os direitos reservados</h2>
+    <div class="rodape_imagens">
+        <a class = "rodape_mobile" href="https://www.linkedin.com/in/diego-braga-254960160/"><img src="imagens/linkedin.png"></a>
+        <a class = "rodape_mobile" href="https://github.com/diegobragagomes"><img src="imagens/github.png"></a>
+        <a class = "rodape_tablet" href="https://www.linkedin.com/in/diego-braga-254960160/"><img src="imagens/linkedin.png"></a>
+        <a class = "rodape_imagem rodape_tablet " href="https://github.com/diegobragagomes"><img src="imagens/github.png"></a>
+    </div>
+    
+   </footer> 
+<script src="js/main.js"></script>
+</body>
+</html>

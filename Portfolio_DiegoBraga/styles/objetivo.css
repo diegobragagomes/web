@@ -1,0 +1,40 @@
+.objetivo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--cor_fundo2);
+    color: var(--cor_realce);
+    gap: 1rem;
+}
+
+.objetivo_titulo {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.objetivo_titulo b {
+    color: var(--cor_fundo);
+    font-weight: 700;
+}
+
+.objetivo_texto {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: var(--cor_fundo);
+}
+
+@media screen and (min-width: 1024px) {
+    .objetivo {
+        padding: 5rem;
+        align-items: center;
+    }
+
+    .objetivo_titulo {
+        font-size: 2.5rem;
+    }
+
+    .objetivo_texto {
+        font-size: 1.5rem;
+    }
+}
