@@ -24,6 +24,8 @@
     --fonte_principal: 'Poppins', sans-serif;
     --fonte_secundaria: 'Josefin Sans',sans-serif;
 
+    --menu_fechado: url(../imagens/MenuFechado.png);
+    --menu_aberto: url(../imagens/MenuAberto.png);
     --icon: url("../imagens/off.png");
 }  
 
@@ -31,6 +33,7 @@
     --cor_fundo: black;
     --cor_fundo2: white ;
     --icon: url("../imagens/on.png");
+    --menu_fechado: var(--menu_aberto);
 }
 
 body {

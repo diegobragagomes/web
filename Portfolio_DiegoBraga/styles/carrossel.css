@@ -6,6 +6,7 @@
     margin: 1em;
     padding: 1em;
     height: 30vh;
+    box-sizing: content-box;
 }
 
 .card_descricao,
@@ -52,12 +53,10 @@
 .card_botoes {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
 }
 
 .botoes {
     display: flex;
-    margin: 1rem 0;
 }
 
 .botoes_item {
@@ -69,7 +68,6 @@
     display: block;
     border: 2px solid var(--cor_realce);
     font-weight: 700;
-    margin: 1rem 0;
     color: var(--cor_fundo2);
     text-align: center;
     text-decoration: none;

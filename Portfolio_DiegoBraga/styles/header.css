@@ -10,7 +10,7 @@
 .cabeçalho__menu-hamburguer {
     width: 48px;
     height: 48px;
-    background-image: url(../imagens/Menu.svg);
+    background-image: var(--menu_fechado);
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
@@ -52,7 +52,7 @@
 }
 
 .container_botao:checked~.container_rotulo > .cabeçalho__menu-hamburguer {
-    background-image: url(../imagens/MenuAberto.png);
+    background-image: var(--menu_aberto);
 }
 
 .container_botao:checked~.container_rotulo {
