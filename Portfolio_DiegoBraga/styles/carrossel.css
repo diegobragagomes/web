@@ -4,7 +4,7 @@
     height: 100%;
 }
 .card {
-
+    display: block;
     background-color: var(--cor_fundo);
     filter: drop-shadow(1px 0px 1px var(--cor_fundo2));
     border-radius: 15px;
@@ -97,36 +97,12 @@
 
 @media screen and (min-width:1024px) {
 
+
+
     .carrossel_titulo {
         font-size: 26px;
     }
 
-    .swiper {
-        width: 60%;
-    }
-
-    .swiper-pagination {
-        margin: 2em 0 3em 0;
-    }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: block;
-        top: 50%;
-        background: var(--azul_degrade);
-        color: var(--branco);
-        border-radius: 50%;
-        padding: 0.8em;    
-    }
-
-    .swiper-slide {
-        margin-bottom: 2em;
-    }
-
-    .card {
-        margin: 2em auto;
-        width: 50%;
-    }
 }
  
 

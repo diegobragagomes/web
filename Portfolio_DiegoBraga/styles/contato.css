@@ -1,3 +1,13 @@
+.contato {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem;
+    background-color: var(--cor_fundo2);
+    color: var(--cor_realce);
+    gap: 1rem;
+}
+
 .contato_titulo,
 .contato_texto {
     color: var(--cor_fundo);
@@ -26,6 +36,11 @@
     margin-top: 0.5rem;
 }
 @media screen and (min-width:1024px) {
+    .contato {
+        padding: 1.5rem;
+        align-items: center;
+    }
+
     .contato_titulo {
         font-size: 2.5rem;
     }

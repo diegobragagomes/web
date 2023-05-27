@@ -107,15 +107,15 @@
 
 
 .troca_dark {
-    gap: 1px;
+    display: flex;
+    align-items: center; 
+    gap: 5px;
 }
 
 .tema {
     background-image: var(--icon);
     background-repeat: no-repeat;
-    position: absolute;
-    top: 4%;
-    right: 20%;
+    position: relative;
     padding: 2rem;
 }
 
@@ -150,12 +150,16 @@
         padding: 2em 1em;
         text-transform: uppercase;
     }
-    
+
     .opcoes_link {
         text-decoration: none;
-        color: var(--preto);
+        color: var(--cor_fundo2);
         font-size: 1.4rem;
         font-weight: 500;
+    }
+
+    .opcoes_link:hover {
+        border-bottom: 3px solid var(--cor_realce);
     }
 
 
