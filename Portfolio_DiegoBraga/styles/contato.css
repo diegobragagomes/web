@@ -49,16 +49,23 @@
         font-size: 1.5rem;
     }
 
+    .contato_link {
+        display: flex;
+        justify-content: center;
+     }
+
     .contato_link img {
         width: 100%;
     }
 
     .contato_email {
         font-size: 1.8rem;
-        margin-left: 3rem;
+        align-items: center;
     }
 }
 
 @media screen and (min-width:1728px){
-    
+    .contato {
+        padding: 2.5rem;
+    }
 }

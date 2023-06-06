@@ -29,6 +29,11 @@
     --icon: url("../imagens/off.png");
 }  
 
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
 .dark_mode {
     --cor_fundo: black;
     --cor_fundo2: white ;

@@ -160,6 +160,7 @@
 
     .opcoes_link:hover {
         border-bottom: 3px solid var(--cor_realce);
+        color: var(--cor_realce);
     }
 
 

@@ -95,46 +95,151 @@
     color: var(--cor_fundo);
 }
 
+.wrapper {
+    display: none;
+}
+
 @media screen and (min-width:1024px) {
 
+    .card {
+        display: none;
+    }
 
+    .wrapper {
+        display: flex;
+        box-sizing: border-box;
+        width: 100vw;
+    }
 
-    .carrossel_titulo {
-        font-size: 26px;
+    .module.parallax{
+        height: 70vh;
+        width:100vw;
+        overflow: hidden;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    .card_oposto {
+        padding: 0
+    }
+
+    .module_text {
+        width: 100vw;
+        height: 100%;
+        margin: 3rem 1.5rem;
+    }
+
+    .descricao_titulo {
+        font-size: 34px;
+    }
+
+    .descricao_titulo-livro{
+        font-size: 28px;
+    }
+
+    .descricao_texto {
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+
+    .parallax_buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .botoes_ancora {
+        padding: 1rem;
+    }
+        
+    .img_parallax-1 {
+        background-image: url("../imagens/hr_700px.jpg");
+    }
+
+    .img_parallax-2 {
+        background-image: url("../imagens/card_trans_700px.jpg");
+    }
+
+    .img_parallax-3 {
+        background-image: url("../imagens/sales_700px.jpg");
+    }
+
+    .descricao_texto strong{
+        font-weight: 700;
     }
 
 }
  
 
 @media screen and (min-width:1728px){
-    .container_carrossel {
-        display: flex;
-        margin: 0 10vw 3em 10vw;
-        align-items: center;
-    }
-
-    .swiper {
-        width: 50%;
-    }
-
-    .swiper-pagination {
-        margin: 1em 0;
-    }
-
+    
     .card {
-        width: 70%;
-        margin-left: 3em;
+        display: none;
     }
 
-    .descricao {
-        margin-right: 2em;
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
     }
 
-    .descricao_titulo {
-        font-size: 32px;
+    .module_text {
+        padding: 3rem;
+        margin: 2rem 1rem;
+        width: 50vw;
     }
+
+    
+    .module.parallax{
+        height: 75vh;
+        width:57.5vw;
+        overflow:hidden;
+        background-position: 0 40%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 50%;
+    }
+
+    .card_oposto {
+        padding: 0;
+    }
+
+    .card_oposto > .module.parallax {
+        background-position: 100% 0;
+        width: 58.75vw;
+        background-size: 60%;
+    }
+
+    .img_parallax-1 {
+        background-image: url("../imagens/hr_1024.jpg");
+        
+    }
+
+    .img_parallax-2 {
+        background-image: url("../imagens/card_trans_1024.jpg");
+    }
+
+    .img_parallax-3 {
+        background-image: url("../imagens/sales_1024px.jpg");
+    }
+
 
     .descricao_texto {
-        font-size: 16px;
+        font-size: 24px;
+        word-spacing: 0.5rem;
+        line-height: 2rem;
+        margin-bottom: 2.5rem;
     }
+
+    .parallax_buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .botoes_ancora {
+        padding: 1rem;
+    }
+
 }

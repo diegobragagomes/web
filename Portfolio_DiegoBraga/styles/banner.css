@@ -74,12 +74,13 @@
     .banner {
         flex-direction: row;
         padding: 1em 2em;
+        justify-content: flex-start;
     }
 
     .banner_titulo {
         text-align: left;
         font-size: 42px;
-        margin-left: 2rem;
+        margin: 2rem 0 0 2rem;
     }
 
     .banner_texto {
@@ -88,9 +89,14 @@
 
     .banner_imagem {
         margin-left: 0.5rem;
-        width: 40%;
+        padding: 1rem;
+        width: 40vh;
+        height: 40vh;
     }
 
+    .sobre {
+        margin: 3rem 0;
+    }
     .sobre_infos {
         align-items: center;
     }
@@ -105,18 +111,33 @@
 
 @media screen and (min-width:1728px){
     .banner {
-        padding: 7em 2em;
+        height: 58vh;
     }
     
     .banner_titulo {
         font-size: 36px;
+        margin-top: 3rem;
+        margin-left: 3rem;
     }
 
-    .banner_busca {
-        width: 30%;
+    .banner_texto {
+        font-size: 1.5rem;
     }
 
-    .banner_busca::placeholder {
-        background-position: 7em;
+    .banner_imagem {
+        position: relative;
+        bottom: 5%;
+        width: 45vh;
+        height: 45vh;
+        margin-left: 4rem;
     }
+
+    .sobre {
+        margin: 1rem 2rem 0 1rem;
+    }
+
+    .sobre_infos {
+        margin-top: 2.5rem;
+    }
+
 }
