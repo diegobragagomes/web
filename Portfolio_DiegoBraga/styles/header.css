@@ -20,16 +20,19 @@
 
 .cabecalho {
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--cor_fundo);
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 10;
+    border-bottom: 2px solid var(--cor_fundo2);
 }
 
 .container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
 }
@@ -108,6 +111,7 @@
 
 .troca_dark {
     display: flex;
+    flex-wrap: wrap;
     align-items: center; 
     gap: 5px;
 }
@@ -144,6 +148,7 @@
 
     .opcoes {
         display: flex;
+        flex-wrap: wrap;
     }
     
     .opcoes_item {
@@ -183,11 +188,13 @@
 
     .opcoes {
         display: flex;
+        flex-wrap: wrap;
         margin-right: 35%;
     }
     
     .container_link {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         text-decoration: none;
         color: var(--preto);

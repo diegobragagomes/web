@@ -15,6 +15,7 @@ hr {
 
 .rodape_imagens {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin: 0.5rem 0 0 40%;
 }
@@ -27,6 +28,7 @@ hr {
         font-size: 24px;
         color: var(--preto);
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         padding: 0.5em 1em;
         align-items: center;
@@ -43,29 +45,11 @@ hr {
 
     .rodape_titulo {
         width: 70vw;
-    }
-
-    .rodape_imagens {
-        margin: 0.5rem 0;
-    }
-
-}
-
-@media screen and (min-width:1728px){
-    .rodape_mobile {
-        display: none;
-    }
-
-    .rodape_tablet {
-        display: block;
-    }
-
-    .rodape_titulo {
         margin-left: 1rem;
     }
 
     .rodape_imagens {
-        margin: 0.5rem 0;  
+        margin: 0.5rem 0.5rem;
     }
 
 }

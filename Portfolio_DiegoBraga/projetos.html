@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Diego Braga</title>
     <link rel="stylesheet" href="reset.css"> 
-    <link rel="stylesheet" href="https://unpkg.com/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -21,15 +20,15 @@
             </label>
             <ul class="lista_menu">
                 <li class="lista_menu_item">
-                    <a class = "lista_menu_link" href="#banner">Sobre Mim</a>
+                    <a class = "lista_menu_link" href="index.html">Sobre Mim</a>
                 </li>
                 <hr>
                 <li class="lista_menu_item">
-                    <a class = "lista_menu_link" href="#principais_projetos">Projetos</a>
+                    <a class = "lista_menu_link" href="projetos.html">Projetos</a>
                 </li>
                 <hr>
                 <li class="lista_menu_item">
-                    <a class = "lista_menu_link" href="#contato">Contato</a>
+                    <a class = "lista_menu_link" href="index.html#contato">Contato</a>
                 </li>
                 <hr>
             </ul>
@@ -40,7 +39,7 @@
         <!--Parte sobre o botão de interação na versão tablet-->
 
         <ul class="opcoes">
-            <li class="opcoes_item"><a class = "opcoes_link" href = "#banner">Sobre Mim</a></li>
+            <li class="opcoes_item"><a class = "opcoes_link" href = "index.html/#banner">Sobre Mim</a></li>
             <!-- <input type="checkbox" id ="opcoes_menu" class = "opcoes_botao">
             <label for="opcoes_menu" class="opcoes_menu_rotulo">
                 <li class="opcoes_item">Sobre</li>
@@ -64,8 +63,8 @@
             </ul>->
 
             <!--Menu do modo tablet-->            
-            <li class="opcoes_item"><a class = "opcoes_link" href = "#principais_projetos">Projetos</a></li>
-            <li class="opcoes_item"><a class = "opcoes_link" href = "#contato">Contato</a></li>
+            <li class="opcoes_item"><a class = "opcoes_link" href = "index.html/#principais_projetos">Projetos</a></li>
+            <li class="opcoes_item"><a class = "opcoes_link" href = "index.html/#contato">Contato</a></li>
         </ul>
 
         <!--Menu do modo mobile em formato de ícones-->  
@@ -77,9 +76,283 @@
    </header>
    <main>
     <section class="objetivo" id ="banner">
-        <h2 class="objetivo_titulo">Conheça o <b>autor</b> e seus <b>projetos</b></h2>
-        <p class ="objetivo_texto">Entenda o contexto do autor, a escolha dos projetos e seus objetivos.</p>
+        <h2 class="objetivo_titulo">Área de <b>Projetos</b></h2>
+        <p class ="objetivo_texto">Premissas, ferramentas e soluções serão apresentadas</p>
     </section>
+
+    
+    <section class="projeto_flip1" id = "projeto1">
+        <input type="checkbox" id = "botao_projeto" class="projeto_flip_botao">
+        <label for="botao_projeto" class="projeto_rotulo">
+             <span class = "projeto_botao1">Projeto Card Transaction</span>
+            <p class="projeto_indicacao1">Clique Aqui</p>
+            <span class="fechar_botao">&times;</span>
+        </label>
+        <div id="popup1" class="overlay">
+            <div class="card_projeto">
+                <h2 class="texto_principal_projeto">Premissas</h2>
+                <div class="content_projeto">
+                    <p class="texto_descricao_projeto">O projeto se trata sobre a Análise de Dados de um case de aluguel de bicicleta pela empresa Divvy em Chicago entre os anos de 2014 e 2017.</p>
+                    <p class="texto_descricao_projeto">O principal objetivo desse projeto é entender melhor o perfil situacional da utilização das bicicletas, o perfil do usuário e um pouco mais sobre as principais estações que são utilizadas por esses usuários.</p>
+                    <p class="texto_descricao_projeto indica_lista">Ao todo, o projeto foi separado em 3 fases:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">Arquitetura de Dados</li>
+                        <li class="item_projeto">Entendimento e Processamento dos Dados</li>
+                        <li class="item_projeto">Análise dos Dados</li>
+                    </ul>
+                    <p class="texto_descricao_projeto indica_lista">Principais Ferramentas:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">AWS</li>
+                        <li class="item_projeto">PySpark</li>
+                        <li class="item_projeto">SQL</li>
+                        <li class="item_projeto">Metabase</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2 class="texto_principal_projeto">Arquitetura de Dados</h2>
+                <div class="content1">
+                    <p class="texto_descricao_projeto">Nessa etapa, o objetivo foi desenhar a arquitetura, isto é, o caminho pelo qual os dados partiriam desde o computador até a disponibilização para a ferramenta de visualização de dados. Abaixo, pode-se observar o desenho dessa arquitetura:</p>
+                    <img  class = "imagem_projeto" src="imagens/Credit_Card_Project.drawio.png" alt="Arquitetura dos Dados">
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">Tudo se inicia com o download dos dados do case <a class = "link_projeto" href="https://www.kaggle.com/datasets/yingwurenjian/chicago-divvy-bicycle-sharing-data">Chicago Divvy</a> no Kaggle.</li>
+                        <li class="item_projeto">Após isso, os dados são inseridos em um bucket, chamado de Raw, no S3 dentro da AWS. Esses dados chegarão brutos, em .csv, e serão processados pelo EMR (Elastic Map Reduce) e serão salvos em .parquet em outro bucket no S3, chamado de Curated.</li>
+                        <li class="item_projeto">A partir desse dado em .parquet, haverá um acionamento de um crawler no Glue, responsável por entender a estrutura e o tipo dos dados, para catalogar como esses dados estão dispostos no arquivo e qual é o formato de cada uma das colunas.</li>
+                        <li class="item_projeto">Seguindo o caminho dos dados até a visualização, faz-se necessária a utilização do Redshift Spectrum, que permite a leitura de arquivos no S3 pelo Redshift ao se criarem schemas e tabelas externas, com o auxílio do catálogo prévio do Glue. A partir desse processo, os dados que foram catalogados no Glue e estão presentes no S3, podem ser lidos e disponibilizados no RedShift.</li>
+                        <li class="item_projeto">Por último, a ferramenta de visualização escolhida foi o Metabase, pelo fato de ser open source e trabalhar com o SQL, que é uma ferramenta que também buscava desenvolver e expor. Para que o Metabase pudesse funcionar, foi utilizado o Docker e a partir da imagem metabase/metabase rodando na porta 3000 do localhost, houve a possibilidade de utilização dele. A conexão no Metabase é feita de maneira bastante simples, conectando ao database do Redshift e fazendo queries a partir dele.</li>
+                    </ul>
+                    <p class="texto_descricao_projeto">Essa é uma arquitetura simples, mas cumpre o objetivo de se trabalhar quase inteiramente na nuvem, passando pelos processos de storage, processamento e disponibilização como um DW, pelo Redshift, até a conexão com a ferramenta de visualização, esta que poderia estar sendo utilizada num EC2, como um app no Elastic BeanStalk, numa app no Heruko, ou simplesmente na própria nuvem do Metabase, como seria o caso de uma versão online paga para o Power BI, Tableau e demais.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2 class="texto_principal_projeto">Entendimento e Processamento dos Dados</h2>
+                <div class="content1">
+                    <p class="texto_descricao_projeto">Esse case consiste em uma tabela única com 23 colunas, todas do tipo string, sendo:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">trip_id : o ID da viagem</li>
+                        <li class="item_projeto">year : ano que ocorreu a determinada viagem</li>
+                        <li class="item_projeto">month : mês que ocorreu a determinada viagem</li>
+                        <li class="item_projeto">week: semana que ocorreu a determinada viagem</li>
+                        <li class="item_projeto">day: dia que ocorreu a determinada viagem</li>
+                        <li class="item_projeto">hour : hora que ocorreu a determinada viagem</li>
+                        <li class="item_projeto">user_type: tipo de cadastro do usuário</li>
+                        <li class="item_projeto">gender: gênero do usuário</li>
+                        <li class="item_projeto">starttime: horário de início da viagem</li>
+                        <li class="item_projeto">stoptime: horário de finalização da viagem</li>
+                        <li class="item_projeto">tripduration: duração da viagem</li>
+                        <li class="item_projeto">temperature: temperatura, em Fahrenheit, no momento da viagem</li>
+                        <li class="item_projeto">events: tempo (clima) no momento da viagem</li>
+                        <li class="item_projeto">from_station_id: ID da estação de origem</li>
+                        <li class="item_projeto">from_station_name: nome da estação de origem</li>
+                        <li class="item_projeto">latitude_start: latitude de origem</li>
+                        <li class="item_projeto">longitude_start: longitude de origem</li>
+                        <li class="item_projeto">dpcapacity_start: número de espaços para as bicicletas em cada estação de origem</li>
+                        <li class="item_projeto">to_station_id: ID da estação de chegada</li>
+                        <li class="item_projeto">to_station_name: nome da estação de chegada</li>
+                        <li class="item_projeto">latitude_end: latitude de chegada</li>
+                        <li class="item_projeto">longitude_end: longitude de chegada</li>
+                        <li class="item_projeto">dpcapacity_end: número de espaços para as bicicletas em cada estação de chegada</li>
+                    </ul>
+                    <p class="texto_descricao_projeto">Sabendo-se disso, a arquivo .csv, localizado no bucket Raw, foi processado no EMR, utilizando Pyspark, no Jupyter Notebook.</p>
+                    <p class="texto_descricao_projeto">Buscou-se apenas o mínimo para a possível visualização posterior, sendo verificada a existência de nulos, que comprovou que não havia nulos nessa tabela.</p>
+                    <p class="texto_descricao_projeto">Depois, houve a alteração dos tipos de dados das colunas, já que algumas deveriam ser numéricas e outras no formato de timestamp, como no caso do starttime e stoptime.</p>
+                    <p class="texto_descricao_projeto">Ao final dessa etapa, foi gerado um novo arquivo, nesse caso .parquet e ele foi salvo em outro bucket, chamado Curated.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2 class="texto_principal_projeto">Análise dos Dados</h2>
+                <div class="content1">
+                    <p class="texto_descricao_projeto">Com os dados disponíveis no RedShift , conecta-se ao Metabase e o foco se vira para a análise em si. Com isso, alguns cruzamentos entre os dados foram realizados para bucar extrair informações relevantes, entre eles:</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>1 - Quantidade de utilizações por ano </strong> </p>
+                    <img  class = "imagem_projeto" src="imagens/1 -Quantidade_de_utilizações_por_ano.png" alt="Quantidade de utilizações por ano">
+                    <p class="texto_descricao_projeto">O gráfico demonstra a variação da quantidade de utilização do serviço ao longo dos anos. A partir dele, pode-se notar um aumento gradativo ao longo dos anos, sendo 2017 correspondente a quase o dobre de utilizações de 2014.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>2 - Quantidade de utilizações por mês e pela média da temperatura</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/2 - Quantidade_de_utilizações_pelo_mês_e_pela_média_e_temperatura.png" alt="Quantidade de utilizações por mês e pela média da temperatura">
+                    <p class="texto_descricao_projeto">Pode-se perceber ao observar o gráfico que conforme a média de temperatura aumenta, o que parece ser ali o final da primavera até o final do verão, as pessoas tendem a utilizar mais o serviço. Isso pode se perceber empiricamente em locais frios como o caso de Chicago, já que com as baixas temperaturas, atividades ao ar livre se tornam mais raras, retirando da lista atividades que dependam do frio.</p>
+                    <p class="texto_descricao_projeto">Logo, é intuito que a empresa que coordena o serviço foque mais sua estratégia nesses meses, já que a menos que ela não conseguirá com o fator externo, que no caso é o climático.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>3 - Quantidade de utilizações por mês, pela média de temperatura e pela média da duração da viagem</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/3 - Quantidade_de utilizações_pelo mês_pela_média_de_temperatura_e_pela_média_de_duração_da_viagem.png" alt="Quantidade de utilizações por mês, pela média de temperatura e pela média da duração da viagem">
+                    <p class="texto_descricao_projeto">Seguindo com a análise da utilização pela temperatura, agora há a adição de mais um fator, que é a média da duração da viagem. Cruzando os dados das 3 colunas conjuntamente, é possível perceber que assim como a quantidade de utilizações, o tempo média da duração da viagem também é aumentado no período de maiores médias de temperatura. Sendo, cerca de quase 30% maior em períodos mais quente quando comparado aos períodos mais frios.</p>
+                    <p class="texto_descricao_projeto">Isso reforça o foco nesse período mais quente, que se estende desde maio até setembro, aproximadamente.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>4 - Quantidade de utilizações pelo dia da semana</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/4 - Quantidade_de_utilizações_pelo_dia_da_semana.png" alt="Quantidade de utilizações pelo dia da semana">
+                    <p class="texto_descricao_projeto">Esse e o próximo gráficos destacarão a relação da utilização das utilizações pelos dias e horas específicos para tentar entender um perfil. Nesse primeiro, pode-se notar uma característica interessante, as utilizações são cerca de 50% superiores em dias de semana que em finais de semana. O que poderia sugerir um efeito de utilização maior com a finalidade de deslocamento para o trabalho ou eventos sociais durante a semana.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>5 - Quantidade de utilizações pela hora do dia</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/5 - Quantidade_de_utilizações_pela_hora_do_dia.png" alt="Quantidade de utilizações pela hora do dia">
+                    <p class="texto_descricao_projeto">Continuando a análise do gráfico anterior, a premissa da utilização com a finalidade do trabalho é reforçada por esse gráfico, já que os horários de maior pico de utilização são entre 8-10 h e 16 - 18 h.</p>
+                    <p class="texto_descricao_projeto">Analisando essas possibilidades, uma possível campanha de marketing ou descontos para aumentar a quantidade em horários de menores incidências poderiam ser interessantes.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>6 - Quantidade de utilizações de acordo com o tempo (clima) do dia</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/6 - Quantidade_de_utilizações_por_como_estava_o_tempo_no_dia.png" alt="Quantidade de utilizações de acordo com o tempo (clima) do dia">
+                    <p class="texto_descricao_projeto">O gráfico demonstra que a esmagadora maioria dos dias de utilização são dias nublados, o que ajuda a dedução de que a influência na utilização por conta de o tempo estar bonito ou não estar o mais apropriado é pequena ou nula.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>7 - Quantidade de utilizações por gênero</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/7 - Quantidade_de_utilizações_pelo_gênero.png" alt="Quantidade de utilizações por gênero">
+                    <p class="texto_descricao_projeto">Nota-se que a grande maioria das utilizações é realizada por homens. Seguindo-se a premissa que as utilizações tem seu foco no deslocamento para o trabalho, poderia se pensar, hipoteticamente, na possibilidade da mobilidade pela diferença na vestimenta entre homens e mulheres, principalmente em um ambiente formal. Ou ainda no fator segurança, por se tratar de uma cidade grande. Nesse caso, apenas hipóteses, que deveriam ser avaliadas para buscar soluções afim de aproximar o público feminino.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>8 - Quantidade de utilizações por tipo de usuário</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/8 - Quantidade_de_utilizações_por_tipo_de_usuário.png" alt="Quantidade de utilizações por tipo de usuário">
+                    <p class="texto_descricao_projeto">O gráfico implica que mais de 90% dos usuários são inscritos, isso pode implicar que a política de inscritos está funcionando e poderia ser melhor explorada e/ou as outras opções poderiam ser melhores exploradas ou descartadas. Os casos teriam que ser melhor abordados para se chegar na melhor política possível.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>9 - 10 estações de partida com maior movimento</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/9 - 10_estações_de_partida_com_maior_movimento.png" alt="10 estações de partida com maior movimento">
+                    <p class="texto_descricao_projeto indice_analise"><strong>10 - 10 estações de chegada com maior movimento</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/10 - 10_estações_de_chegada_com_maior_movimento.png" alt="10 estações de chegada com maior movimento">
+                    <p class="texto_descricao_projeto">O cruzamento dos dados geram, nesses gráficos, as 10 melhores possibilidades de investimento em uma oferta maior de bicicletas, visto que elas possuem maior volume de utilizações. Ainda mais, as 4 estações com maior volume de utilizações são as mesmas tanto para partida como chegada, o que poderia se explicar pela proximidade de grandes centros corporativos.</p>
+                    <p class="texto_descricao_projeto">Mas, o foco deve se dar no quesito que por apresentarem um grande volume, uma maior oferta pode gerar maior número de utilizações e com isso maior retorno.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2 class="texto_principal_projeto">Conclusão</h2>
+                <div class="content1">
+                    <p class="texto_descricao_projeto">O projeto foi elaborado tendo a premissa de avaliar, a partir dos dados, a relação entre as utilizações, perfil e as estações, buscando entender melhor sobre possíveis melhoras em estratégias e ofertas de serviço. Para isso, foram utilizadas ferramentas, tais como Pyspark, SQL, AWS, Metabase para auxiliar na resposta desses questionamentos.</p>
+                    <p class="texto_descricao_projeto">Após o trabalho com os dados e a análise, nota-se que o principal perfil dos usuários é de homens, inscritos, provavelmente utilizando para trabalho, entre 8-10 e 16-18, com utilizações maiores em períodos quentes (como final da primavera e verão), focados principalmente em 5 grandes estações, seja para partida ou para chegada.</p>
+                    <p class="texto_descricao_projeto">Isso ajuda a entender o usuário atual, gerar personas melhores para o marketing e pensar em possíveis políticas e estratégicas de marketing, como a decisão de focar em ganhar um volume maior de usuárias femininas ou de tentar aumentar o público em horários de menor incidência de utilização através de campanhas de marketing mais efetivas ou descontos. Por final, mas não menos importantes, uma possível estratégia de um aumento de oferta nas principais estações de partida e chegada, dados os volumes apresentados.</p>
+                    <p class="texto_descricao_projeto">Com o intuito de avançar com a ideia do projeto, poderia se gerar uma discussão e avaliar alguns indicadores (KPIs) para que fossem observados ao longo do tempo e que pudessem estar disponíveis em um dashboard, que poderia ser gerado no próprio Metabase (ou outra ferramenta de visualiação).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projeto_flip2" id = "projeto2">
+        <input type="checkbox" id = "botao_projeto2" class="projeto_flip_botao2">
+        <label for="botao_projeto2" class="projeto_rotulo2">
+            <span class = "projeto_botao2">Human Resources Project</span>
+            <p class="projeto_indicacao2">Clique Aqui</p>
+            <span class="fechar_botao2">&times;</span>
+        </label> 
+        <div id="popup2" class="overlay2">
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projeto_flip3" id = "projeto3">
+        <input type="checkbox" id = "botao_projeto3" class="projeto_flip_botao3">
+        <label for="botao_projeto3" class="projeto_rotulo3">
+            <span class = "projeto_botao3">Sales Project</span>
+            <p class="projeto_indicacao3">Clique Aqui</p>
+            <span class="fechar_botao3">&times;</span>
+        </label> 
+        <div id="popup3" class="overlay3">
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+                <h2>Teste</h2>
+                <div class="content1">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
    </main>
    <footer class="rodape">
 
@@ -87,11 +360,12 @@
     <div class="rodape_imagens">
         <a  rel="nofollow" class = "rodape_mobile" href="https://www.linkedin.com/in/diego-braga-254960160/"><img src="imagens/linkedin.png"></a>
         <a  rel="nofollow" class = "rodape_mobile" href="https://github.com/diegobragagomes"><img src="imagens/github.png"></a>
-        <a  rel="nofollow" class = "rodape_imagem rodape_tablet" href="https://www.linkedin.com/in/diego-braga-254960160/"><img src="imagens/icons8-linkedin-96.png"></a>
-        <a rel="nofollow" class = "rodape_imagem rodape_tablet " href="https://github.com/diegobragagomes"><img src="imagens/icons8-github-96.png"></a>
+        <a  rel="nofollow" class = "rodape_imagem rodape_tablet" href="https://www.linkedin.com/in/diego-braga-254960160/"><img src="imagens/linkedin-svgrepo-com_68px.svg"></a>
+        <a rel="nofollow" class = "rodape_imagem rodape_tablet " href="https://github.com/diegobragagomes"><img src="imagens/github-color-svgrepo-com_68px.svg"></a>
     </div>
     
    </footer> 
-<script src="js/main.js"></script>
+<script src="js/projetos.js"></script>
+<script src = "js/main.js"></script>
 </body>
 </html>

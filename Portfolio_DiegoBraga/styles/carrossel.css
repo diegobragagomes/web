@@ -112,21 +112,27 @@
     }
 
     .module.parallax{
-        height: 70vh;
-        width:100vw;
+        height: 75vh;
+        width:53.5%;
         overflow: hidden;
-        background-position: 50% 50%;
+        background-position: 0% 100%;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: cover;
+        background-size: 50%;
     }
 
     .card_oposto {
         padding: 0
     }
 
+    .card_oposto > .module.parallax {
+        background-position: 100% 0;
+        width: 54%;
+        background-size: 60%;
+    }
+
     .module_text {
-        width: 100vw;
+        width: 50vw;
         height: 100%;
         margin: 3rem 1.5rem;
     }
@@ -155,15 +161,16 @@
     }
         
     .img_parallax-1 {
-        background-image: url("../imagens/hr_700px.jpg");
+        background-image: url("../imagens/hr_1024.jpg");
+        
     }
 
     .img_parallax-2 {
-        background-image: url("../imagens/card_trans_700px.jpg");
+        background-image: url("../imagens/card_trans_1024.jpg");
     }
 
     .img_parallax-3 {
-        background-image: url("../imagens/sales_700px.jpg");
+        background-image: url("../imagens/sales_1024px.jpg");
     }
 
     .descricao_texto strong{
