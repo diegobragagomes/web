@@ -20,7 +20,7 @@
             </label>
             <ul class="lista_menu">
                 <li class="lista_menu_item">
-                    <a class = "lista_menu_link" href="index.html">Sobre Mim</a>
+                    <a class = "lista_menu_link" href="index.html#banner">Sobre Mim</a>
                 </li>
                 <hr>
                 <li class="lista_menu_item">
@@ -33,7 +33,7 @@
                 <hr>
             </ul>
             
-            <h1 class="container_titulo"><b class="container_titulo_negrito">Portfólio</b></h1>
+            <h1 class="container_titulo"><b class="container_titulo_negrito"><a class="home_link" href = "index.html">Portfólio</a></b></h1>
         </div>
 
         <!--Parte sobre o botão de interação na versão tablet-->
@@ -89,7 +89,7 @@
             <span class="fechar_botao">&times;</span>
         </label>
         <div id="popup1" class="overlay">
-            <div class="card_projeto">
+            <div class="card_projeto" id = "start">
                 <h2 class="texto_principal_projeto">Premissas</h2>
                 <div class="content_projeto">
                     <p class="texto_descricao_projeto">O projeto se trata sobre a Análise de Dados de um case de aluguel de bicicleta pela empresa Divvy em Chicago entre os anos de 2014 e 2017.</p>
@@ -165,7 +165,7 @@
                     <p class="texto_descricao_projeto">Com os dados disponíveis no RedShift , conecta-se ao Metabase e o foco se vira para a análise em si. Com isso, alguns cruzamentos entre os dados foram realizados para bucar extrair informações relevantes, entre eles:</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>1 - Quantidade de utilizações por ano </strong> </p>
                     <img  class = "imagem_projeto" src="imagens/1 -Quantidade_de_utilizações_por_ano.png" alt="Quantidade de utilizações por ano">
-                    <p class="texto_descricao_projeto">O gráfico demonstra a variação da quantidade de utilização do serviço ao longo dos anos. A partir dele, pode-se notar um aumento gradativo ao longo dos anos, sendo 2017 correspondente a quase o dobre de utilizações de 2014.</p>
+                    <p class="texto_descricao_projeto">O gráfico demonstra a variação da quantidade de utilização do serviço ao longo dos anos. A partir dele, nota-se que 2017 correspondente a quase o dobro de utilizações de 2014.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>2 - Quantidade de utilizações por mês e pela média da temperatura</strong></p>
                     <img  class = "imagem_projeto" src="imagens/2 - Quantidade_de_utilizações_pelo_mês_e_pela_média_e_temperatura.png" alt="Quantidade de utilizações por mês e pela média da temperatura">
                     <p class="texto_descricao_projeto">Pode-se perceber ao observar o gráfico que conforme a média de temperatura aumenta, o que parece ser ali o final da primavera até o final do verão, as pessoas tendem a utilizar mais o serviço. Isso pode se perceber empiricamente em locais frios como o caso de Chicago, já que com as baixas temperaturas, atividades ao ar livre se tornam mais raras, retirando da lista atividades que dependam do frio.</p>
@@ -201,7 +201,7 @@
             <div class="card_projeto">
                 <h2 class="texto_principal_projeto">Conclusão</h2>
                 <div class="content1">
-                    <p class="texto_descricao_projeto">O projeto foi elaborado tendo a premissa de avaliar, a partir dos dados, a relação entre as utilizações, perfil e as estações, buscando entender melhor sobre possíveis melhoras em estratégias e ofertas de serviço. Para isso, foram utilizadas ferramentas, tais como Pyspark, SQL, AWS, Metabase para auxiliar na resposta desses questionamentos.</p>
+                    <p class="texto_descricao_projeto">O projeto foi elaborado tendo a premissa de avaliar, a partir dos dados, a relação entre as utilizações, perfil e as estações, buscando entender melhor sobre possíveis melhorias em estratégias e ofertas de serviço. Para isso, foram utilizadas ferramentas, tais como <strong>Pyspark, SQL, AWS, Metabase</strong> para auxiliar na resposta desses questionamentos.</p>
                     <p class="texto_descricao_projeto">Após o trabalho com os dados e a análise, nota-se que o principal perfil dos usuários é de homens, inscritos, provavelmente utilizando para trabalho, entre 8-10 e 16-18, com utilizações maiores em períodos quentes (como final da primavera e verão), focados principalmente em 5 grandes estações, seja para partida ou para chegada.</p>
                     <p class="texto_descricao_projeto">Isso ajuda a entender o usuário atual, gerar personas melhores para o marketing e pensar em possíveis políticas e estratégicas de marketing, como a decisão de focar em ganhar um volume maior de usuárias femininas ou de tentar aumentar o público em horários de menor incidência de utilização através de campanhas de marketing mais efetivas ou descontos. Por final, mas não menos importantes, uma possível estratégia de um aumento de oferta nas principais estações de partida e chegada, dados os volumes apresentados.</p>
                     <p class="texto_descricao_projeto">Com o intuito de avançar com a ideia do projeto, poderia se gerar uma discussão e avaliar alguns indicadores (KPIs) para que fossem observados ao longo do tempo e que pudessem estar disponíveis em um dashboard, que poderia ser gerado no próprio Metabase (ou outra ferramenta de visualiação).</p>
@@ -213,69 +213,172 @@
     <section class="projeto_flip2" id = "projeto2">
         <input type="checkbox" id = "botao_projeto2" class="projeto_flip_botao2">
         <label for="botao_projeto2" class="projeto_rotulo2">
-            <span class = "projeto_botao2">Human Resources Project</span>
+            <span class = "projeto_botao2">Projeto IBM - Transações de Cartões</span>
             <p class="projeto_indicacao2">Clique Aqui</p>
             <span class="fechar_botao2">&times;</span>
         </label> 
         <div id="popup2" class="overlay2">
-            <div class="card_projeto">
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-            </div>
-            <div class="card_projeto">
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-            </div>
-            <div class="card_projeto">
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+            <div class="card_projeto" id = "start2">
+                <h2 class="texto_principal_projeto">Premissas</h2>
+                <div class="content_projeto">
+                    <p class="texto_descricao_projeto">O projeto se trata sobre a Análise de dados de um case de transações de cartões nos EUA entre os anos de 1991 e fevereiro de 2020.</p>
+                    <p class="texto_descricao_projeto">O principal objetivo desse projeto é entender melhor o perfil da pessoa que efetuou a transação e quais possíveis variáveis podem ser determinantes para buscar um perfil que tenha sofrido alguma fraude durante os anos.</p>
+                    <p class="texto_descricao_projeto indica_lista">Ao todo, o projeto foi separado em 3 fases:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">Arquitetura de Dados</li>
+                        <li class="item_projeto">Entendimento e Processamento dos Dados</li>
+                        <li class="item_projeto">Análise dos Dados</li>
+                    </ul>
+                    <p class="texto_descricao_projeto indica_lista">Principais Ferramentas:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">AWS</li>
+                        <li class="item_projeto">PySpark</li>
+                        <li class="item_projeto">SQL</li>
+                        <li class="item_projeto">Metabase</li>
+                    </ul>
                 </div>
             </div>
             <div class="card_projeto">
-                <h2>Teste</h2>
+                <h2 class="texto_principal_projeto">Arquitetura de Dados</h2>
                 <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-            </div>
-            <div class="card_projeto">
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                    <p class="texto_descricao_projeto">Nessa etapa, o objetivo foi desenhar a arquitetura, isto é, o caminho pelo qual os dados partiriam desde o computador até a disponibilização para a ferramenta de visualização de dados. Abaixo, pode-se observar o desenho dessa arquitetura:</p>
+                    <img  class = "imagem_projeto" src="imagens/Credit_Card_Project.drawio.png" alt="Arquitetura dos Dados">
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">Tudo se inicia com o download dos dados do case <a class = "link_projeto" href="https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions?select=credit_card_transactions-ibm_v2.csv">Card Transaction</a> no Kaggle e o download do .csv do <a class = "link_projeto" href="https://data.bls.gov/cgi-bin/surveymost?bls">CPI Index (CPI-U) [1982-84=100]</a> entre 1988 e 2020.</li>
+                        <li class="item_projeto">Após isso, os dados são inseridos em um bucket, chamado de Raw, no S3 dentro da AWS. Esses dados chegarão brutos, em .csv, e serão processados pelo EMR (Elastic Map Reduce) e serão salvos em .parquet em outro bucket no S3, chamado de Curated.</li>
+                        <li class="item_projeto">A partir desse dado em .parquet, haverá um acionamento de um crawler no Glue, responsável por entender a estrutura e o tipo dos dados, para catalogar como esses dados estão dispostos no arquivo e qual é o formato de cada uma das colunas.</li>
+                        <li class="item_projeto">Seguindo o caminho dos dados até a visualização, faz-se necessária a utilização do Redshift Spectrum, que permite a leitura de arquivos no S3 pelo Redshift ao se criarem schemas e tabelas externas, com o auxílio do catálogo prévio do Glue. A partir desse processo, os dados que foram catalogados no Glue e estão presentes no S3, podem ser lidos e disponibilizados no RedShift.</li>
+                        <li class="item_projeto">Por último, a ferramenta de visualização escolhida foi o Metabase, pelo fato de ser open source e trabalhar com o SQL, que é uma ferramenta que também buscava desenvolver e expor. Para que o Metabase pudesse funcionar, foi utilizado o Docker e a partir da imagem metabase/metabase rodando na porta 3000 do localhost, houve a possibilidade de utilização dele. A conexão no Metabase é feita de maneira bastante simples, conectando ao database do Redshift e fazendo queries a partir dele.</li>
+                    </ul>
+                    <p class="texto_descricao_projeto">Essa é uma arquitetura simples, mas cumpre o objetivo de se trabalhar quase inteiramente na nuvem, passando pelos processos de storage, processamento e disponibilização como um DW, pelo Redshift, até a conexão com a ferramenta de visualização, esta que poderia estar sendo utilizada num EC2, como um app no Elastic BeanStalk, numa app no Heruko, ou simplesmente na própria nuvem do Metabase, como seria o caso de uma versão online paga para o Power BI, Tableau e demais.</p>
                 </div>
             </div>
             <div class="card_projeto">
-                <h2>Teste</h2>
+                <h2 class="texto_principal_projeto">Entendimento e Processamento dos Dados</h2>
                 <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                    <p class="texto_descricao_projeto">Esse case consiste em 4 tabelas, todas do tipo string, sendo:</p>
+                    <p class="texto_descricao_projeto sub_titulo">sd254_cards:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">User : ID do usuário</li>
+                        <li class="item_projeto">CARD INDEX : ID do cartão</li>
+                        <li class="item_projeto">Card Brand : Bandeira do cartão</li>
+                        <li class="item_projeto">Card Type: Tipo do cartão</li>
+                        <li class="item_projeto">Card Number: Número do cartão</li>
+                        <li class="item_projeto">Expires : Data em que o cartão expira</li>
+                        <li class="item_projeto">CVV: Código de Segurança</li>
+                        <li class="item_projeto">Has Chip: Valor binário para saber se o cartão tem chip ou não</li>
+                        <li class="item_projeto">Cards Issued: Problemas com os cartões</li>
+                        <li class="item_projeto">Credit Limit: Limite de Crédito</li>
+                        <li class="item_projeto">Acct Open Date: Data de abertura da conta</li>
+                        <li class="item_projeto">Year PIN last Changed: Ano em que o cartão foi trocado pela última vez</li>
+                        <li class="item_projeto">Card on Dark Web: Se o cartão foi usado na Dark Web</li>
+                    </ul>
+                    <p class="texto_descricao_projeto sub_titulo">sd254_users:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">User_Index : ID do usuário</li>
+                        <li class="item_projeto">Person : Nome do usuário</li>
+                        <li class="item_projeto">Current Age : Idade Atual</li>
+                        <li class="item_projeto">Retirement Age: Idade para se aposentar</li>
+                        <li class="item_projeto">Birth Year: Ano de Nascimento</li>
+                        <li class="item_projeto">Birth Month : Mês de Nascimento</li>
+                        <li class="item_projeto">Gender: Gênero</li>
+                        <li class="item_projeto">Address: Endereço</li>
+                        <li class="item_projeto">Apartment: Número do Apartamento</li>
+                        <li class="item_projeto">City: Cidade</li>
+                        <li class="item_projeto">State: Estado</li>
+                        <li class="item_projeto">Zipcode: CEP</li>
+                        <li class="item_projeto">Latitude: Latitude</li>
+                        <li class="item_projeto">Longitude: Longitude</li>
+                        <li class="item_projeto">Per Capita Income - Zipcode: Renda per Capita na Região</li>
+                        <li class="item_projeto">Yearly Income - Person: Renda Anual do usuário</li>
+                        <li class="item_projeto">Total Debt: Dívida Total</li>
+                        <li class="item_projeto">FICO Score: Score do usuário na Instituição Financeira</li>
+                        <li class="item_projeto">Num Credit Cards: Número de cartões que o usuário possuiu ao longo dos anos</li>
+                    </ul>
+                    <p class="texto_descricao_projeto sub_titulo">cpi_index:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">Year : Ano</li>
+                        <li class="item_projeto">Month : Mês</li>
+                        <li class="item_projeto">CPI_Index : Índice, onde 1982-1984 = 100</li>
+                    </ul>
+                    <p class="texto_descricao_projeto sub_titulo">credit_card_transactions-ibm_v2:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">User_Index : ID do usuário</li>
+                        <li class="item_projeto">Card_User : ID do cartão</li>
+                        <li class="item_projeto">Year : Ano da Transação</li>
+                        <li class="item_projeto">Month: Mês da Transação</li>
+                        <li class="item_projeto">Day: Dia da Transação</li>
+                        <li class="item_projeto">Birth Month : Mês de Nascimento</li>
+                        <li class="item_projeto">Time: Horário da Transação</li>
+                        <li class="item_projeto">Amount: Quantia envolvida na transação</li>
+                        <li class="item_projeto">Use Chip: De que maneira o cartão passou na máquina</li>
+                        <li class="item_projeto">Merchant Name: Código do Estabelecimento</li>
+                        <li class="item_projeto">Merchant City: Cidade do Estabelecimento</li>
+                        <li class="item_projeto">Merchant State: Estado do Estabelecimento</li>
+                        <li class="item_projeto">Zip: CEP do Estabelecimento</li>
+                        <li class="item_projeto">MCC: Código de classificação do tipo de serviço ou produto que o estabelecimento oferece</li>
+                        <li class="item_projeto">Is Fraud: Indicador Binário se foi fraude ou não</li>
+                    </ul>
+                    <p class="texto_descricao_projeto">Sabendo-se disso, a arquivo .csv, localizado no bucket Raw, foi processado no EMR, utilizando Pyspark, no Jupyter Notebook.</p>
+                    <p class="texto_descricao_projeto">Buscou-se apenas o mínimo para a possível visualização posterior, sendo verificada a existência de nulos, que comprovou que não havia nulos nessa tabela.</p>
+                    <p class="texto_descricao_projeto">Depois, houve a alteração dos tipos de dados das colunas, já que algumas deveriam ser numéricas e outras no formato de timestamp, como no caso do starttime e stoptime.</p>
+                    <p class="texto_descricao_projeto">Ao final dessa etapa, foi gerado um novo arquivo, nesse caso .parquet e ele foi salvo em outro bucket, chamado Curated.</p>
                 </div>
-                <h2>Teste</h2>
+            </div>
+            <div class="card_projeto">
+                <h2 class="texto_principal_projeto">Análise dos Dados</h2>
                 <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                    <p class="texto_descricao_projeto">Com os dados disponíveis no RedShift , conecta-se ao Metabase e o foco se vira para a análise em si. Com isso, dentre as, aproximadamente, <strong>21,5 milhões com uma taxa de 0,02% de fraude , 2000 diferentes usuários e 6146 cartões utilizados</strong> no deccorer dos anos, alguns cruzamentos entre os dados foram realizados para bucar extrair informações relevantes, entre eles:</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>1 - Quantidade de usuários pela Idade Atual </strong> </p>
+                    <img  class = "imagem_projeto" src="imagens/1 - Quantidade de usuários pela Idade Atual-15_06_2023, 03_04_27.png" alt="Quantidade de usuários pela Idade Atual">
+                    <p class="texto_descricao_projeto">Percebe-se, através do gráfico, que a maioria dos 2000 usuários estão dispersos entre 18 e 60 anos, considerados anos de atividade laboral. Ainda, pode-se notar uma queda constante do número de usuários ao passar das idades, tendo como exceção pessoas entre 41 e 50 anos.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>2 - Taxa de pessoas, que tiveram seus cartões em algum problema com fraude, pela idade atual</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/2 - Taxa de pessoas com flag de fraude, de acordo com a idade atual-15_06_2023, 03_04_40.png" alt="Taxa de pessoas, que tiveram seus cartões em algum problema com fraude, pela idade atual">
+                    <p class="texto_descricao_projeto">Tendo passado pela análise de idade atual, seria plausível presumir que com um maior número de usuários em idades mais baixas, o percentual de fraude deveria seguir essa proporção. Contudo, ao observar o gráfico, é possível verificar uma crescente com o aumento da idade, sendo os jovens entre 18 e 30 anos aqueles com menor percentual de fraude e aqueles acima dos 80 com maior percentual.</p>
+                    <p class="texto_descricao_projeto">Dada a leitura que o gráfico permite, é possível começar a teorizar do motivo disso ocorrer. Um dos possíveis motivos é o avanço da tecnologia e as pessoas mais idosas não conseguirem acompanhar o andamento da mesma.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>3 - Taxa de Endividamento por Usuário</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/3 - Taxa de Endividamento por Usuário-15_06_2023, 03_04_49.png" alt="Taxa de Endividamento por Usuário">
+                    <p class="texto_descricao_projeto">Primeiramente, para o cálculo da Taxa de Endividamento foi utilizada a Dívida Total e o Ganho Anual por Pessoa, a partir disso foi calculada uma taxa tendo como base o valor da Dívida Total pelo Ganho Anual por Pessoa. Essa taxa é maior ou igual a 0, onde o valor corresponde ao percentual que a Dívida Total representa no Ganho Anual por Pessoa. Depois, ela foi separada em três categorias: baixa, média e alta. Sendo baixa, a faixa entre 0 e 0.5 (não incluso); média, a faixa entre 0.5 (incluso) e 1 (não incluso); e alta, acima de 1(incluso).</p>
+                    <p class="texto_descricao_projeto">Nota-se que mais de 67% dos usuários analisados possuem alto grau de endividamento, possuindo dívidas totais que superam, e em alguns casos superam e muito, o ganho anual.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>4 - Quantidade de Usuários pelo FICO Score</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/4 - Quantidade de Usuários pelo FICO Score-15_06_2023, 03_04_59.png" alt="Quantidade de Usuários pelo FICO Score">
+                    <p class="texto_descricao_projeto">O FICO Score pode ser visto como o nosso Serasa Score, para avaliar a saúde do usuário para possíveis futuros contatos com cartão, conta ou financiamento.</p>
+                    <p class="texto_descricao_projeto">No gráfico, observa-se que a grande maioria dos usuários se encontra na faixa entre 650 e 799, consideradas boas faixas de Score, sendo bem aceitas nas principais instituições de referência.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>5 - Quantidade de Cartões pelo Tipo e pela Bandeira</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/5 - Quantidade de Cartões pelo Tipo e pela Bandeira-15_06_2023, 03_05_11.png" alt="Quantidade de Cartões pelo Tipo e pela Bandeira">
+                    <p class="texto_descricao_projeto">Constata-se que a bandeira Mastercard é a mais utilizada nas transações em geral e que, em geral, há preferência pela utilização do cartão de débito. Porém, também é possível se atentar para o fato que na categoria cartão de crédito, a bandeira Visa tem maior quantidade de cartões utilizados.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>6 - Quantidade de pessoas pela Taxa de Endividamento pela Idade Atual</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/6 - Quantidade de pessoas pela Taxa de Endividamento e pela idade atual-15_06_2023, 03_05_23.png" alt="Quantidade de pessoas pela Taxa de Endividamento pela Idade Atual">
+                    <p class="texto_descricao_projeto">É interessante notar que a interseção da taxa de endividamento com a distribuição da idade atual, no contexto dos EUA, pode-se criar uma hipótese de os mais jovens serem mais endividados por conta de possíveis financiamentos, sejam estudantis, hipotecas ou alguma linha de crédito para carro ou negócios. E dessa maneira, ao longo da vida com o desaparecimento dessas grandes dívidas, a taxa de endividamento se inverter, como é possível verificar entre as faixas de idade 51-60 e 61-70, por exemplo.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>7 - Quantidade de Usuários pelo FICO Score e pela Idade Atual</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/7 - Quantidade de Usuários pelo FICO Score e pela Idade Atual-15_06_2023, 03_05_36.png" alt="Quantidade de Usuários pelo FICO Score e pela Idade Atual">
+                    <p class="texto_descricao_projeto">É importante frisar que mesmo com o alto endividamento dos mais jovens e por eles serem maioria, o Score em si não é afetado. Isso poderia vir a ser entendido como se o FICO Score fosse mais focado no curto prazo e nos pagamentos realizados pelos usuários, estando em dias com seus débitos atuais, mesmo com a existência de débitos passados. Com isso, haveria uma importância maior para o volume de transações com pagamentos em dia, do que uma correlação positiva com a taxa de endividamento.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>8 - Soma dos Valores Gastos Reajustados por Ano</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/8 - Soma dos Valores Gastos Reajustados por Ano-15_06_2023, 03_05_50.png" alt="Soma dos Valores Gastos Reajustados por Ano">
+                    <p class="texto_descricao_projeto">Nesse gráfico, saí-se um pouco da perspectiva micro, do usuário, e entra um pouco mais na macroeconomia. Pelo gráfico, que foi calculado se ajustando os gastos de cada transação pelo CPI (indexador de inflação dos EUA, por mês e por ano), é possível observar uma crescente entre 1991 e 2011, com o começo de uma queda suave a partir de 2011 até 2019, não foi utilizado o ano de 2020, por só existir dado de dois meses.</p>
+                    <p class="texto_descricao_projeto">Essa crescente inicial poderia ter se dado pelo avanço tecnológico tanto no setor de tecnologia propriamente dito, mas com tudo que ele abarca, inclusive o financeiro, como máquinas de cartão, conta bancária digital, entre outros. Porém, a partir de 2008 com a crise financeira que eclodiu, a economia dos EUA entrou em recessão e demorou anos para se recuperar, com outros fatores externos posteriores a 2011, inclusive a insegurança da população e do setor financeiro, poderiam ter mantido a queda nos anos posteriores.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>9 - Valores Totais Gastos, que tiveram seus cartões em algum problema com fraude, por Ano</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/9 - Valores totais gastos com flags de fraude, por ano-15_06_2023, 03_06_05.png" alt="Valores Totais Gastos, que tiveram seus cartões em algum problema com fraude, por Ano">
+                    <p class="texto_descricao_projeto">Observa-se que os valores são mais altos próximos a 2007 e 2008, o que poderia ser vinculado ao assunto sobre a crise financeira. Contudo, é essencial salientar que os valores correspondem a uma mínima fração do volume de gastos durante o mesmo período de tempo.</p>
+                    <p class="texto_descricao_projeto">Logo, seria interessante avaliar mais a fundo especificamente os anos de maior pico e cruzar com os principais perfis avaliados, além de adquirir mais dados para se chegar ema alguma conclusão sobre a relação entre os gastos e fraudes e sua aparência quase cíclica.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>10 - Taxa de Fraude nas Transações pelo MCC (Merchant category codes - Atividade do Negócio)</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/Taxa de Fraude nas Transações por MCC-17_06_2023, 00_35_02.png" alt="Taxa de Fraude nas Transações pelo MCC (Merchant category codes - Atividade do Negócio)">
+                    <p class="texto_descricao_projeto">O gráfico demonstra as 10 principais atividades econômicas que os estabelecimentos mais envolvidos em transações fraudulentas atuam. De acordo com o <a class = "link_projeto" href="https://www.citibank.com/tts/solutions/commercial-cards/assets/docs/govt/Merchant-Category-Codes.pdf">Guia de MCC do Citibank</a>, pode-se notar que os dois primeiros correspondem respectivamente a <strong>Jogos Eletrônicos e Lojas de Instrumentos Musicais, seguidos por lojas de objetos para casa; computadores e periféricos; e pedras preciosas, relógios e jóias</strong>.</p>
+                    <p class="texto_descricao_projeto">O resultado se mostra anti-intuitivo, visto que a expectativa comum é a de lojas de roupas, outlets, pelo maior volume. Contudo, é interessante analisar que em relação a área de jogos eletrônicos, a taxa de fraude em relação as transações totais ultrapassa os 10%, o que quer dizer que uma em cada dez transações se mostra fraudulenta.</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>11 - Taxa de Fraude nas Transações pelo Estado do Estabelecimento</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/Taxa_de_fraude_por_estado.png" alt="Taxa de Fraude nas Transações pelo Estado do Estabelecimento">
+                    <p class="texto_descricao_projeto">Essa é uma demonstração em relação ao total de transações, o que justifica os valores percentualmente tão baixos. Contudo, a massa quantitativa que separa em contabilização os diferentes estados segue a mesma tendência de distribuição, o que se leva ao entendimento que <strong>Ohio, ALaska, Havaí e Nebraska</strong> são 4 dos estados com maior volume de transações que sofreram alguma fraude.</p>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2 class="texto_principal_projeto">Conclusão</h2>
+                <div class="content1">
+                    <p class="texto_descricao_projeto">O projeto foi elaborado tendo a premissa de avaliar, a partir dos dados, a relação entre os perfis de usuários de cartões e suas transações com as possíveis fraudes, buscando entender melhor sobre possíveis personas para lidar. Para isso, foram utilizadas ferramentas, tais como <strong>Pyspark, SQL, AWS, Metabase</strong> para auxiliar na resposta desses questionamentos.</p>
+                    <p class="texto_descricao_projeto">Após a análise dos dados e dos gráficos, as principais informações que se podem extrair são que dentre os 2000 usuários, sua grande maioria é constituída de pessoas em fase ativa, entre 18 e 60 anos, onde a faixa também representa o maior grau de endividamento, porém com FICO Score em níveis médios ou bons. Isso pode, como foi dito, ser por conta de fatores sociais como alto nível de dívida por conta de financiamentos longos, comuns nos EUA. Além disso, o FICO Score, como observado anteriomente, seria possivelmente mais afetado pelo volume de transações e seus pagaemntos em dia no curto prazo, não sendo afetados por essas dívidas. Contrariamente, as pessoas mais velhas tendem a ter mais transações vinculadas a alguma fraude, o que pode ser por conta da barreira tecnológica.</p>
+                    <p class="texto_descricao_projeto">Ademais, o volume de gastos passou por um grande crescimento e depois de 2011 vem passando por pequenas quedas, porém constantes. Com tudo isso, destaca-se que como uma possível empresa que cuidaria dessas transações, seria interessante separar certas personas, como a pessoa mais velha que não tem muito volume de gastos, porém sofre com maior número de fraudes. Diferentemente desse caso, o jovem de 18 a 30 anos, principalmente, possui grande volume de transações, baixo nível de fraude, contudo uma alta dívida.</p>
+                    <p class="texto_descricao_projeto">A partir disso, para os mais novos, o cuidado deveria ser a observação do pagamento constante, porque já que possui um grande grau de endividamento, se começar a crescer uma dívida, a pessoa endividada entrará num processo de "bola de neve" e dificilmente conseguirá arcar com os compromissos futuros. No caso dos mais velhos, a atenção é distinta, eles possuem bom grau de endividamento, então o problema anterior não é tão relevante, porém as transações por si mereceriam maior atenção pelo alto grau de fraude. Outros perfis poderiam ser igualmente criados, de acordo com as diferentes faixas.</p>
+                    <p class="texto_descricao_projeto">Há a importância de se salientar os principais estados atribuídos ao maior volume de transações com fraude e ainda as principais atividades envolvidas, o que ajuda a observar com mais atenção esses setores, buscando entender pontos de falhas especificas que podem ocorrer. Em relação a região geográfica, demonstra-se essencial entender quais os principais pontos que levou esses estados a esses números, ainda mais porque eles não são geograficamente próximos, podem ter divergências culturais fortes e diferentes políticas, então o entendimento mais profundo se faz necessário.</p>
+                    <p class="texto_descricao_projeto">Com o intuito de avançar com a ideia do projeto, poderia se gerar uma discussão e avaliar alguns indicadores (KPIs) para que fossem observados ao longo do tempo e que pudessem estar disponíveis em um dashboard, que poderia ser gerado no próprio Metabase (ou outra ferramenta de visualiação).</p>
                 </div>
             </div>
         </div>
@@ -284,69 +387,182 @@
     <section class="projeto_flip3" id = "projeto3">
         <input type="checkbox" id = "botao_projeto3" class="projeto_flip_botao3">
         <label for="botao_projeto3" class="projeto_rotulo3">
-            <span class = "projeto_botao3">Sales Project</span>
+            <span class = "projeto_botao3">Projeto - Recursos Humanos</span>
             <p class="projeto_indicacao3">Clique Aqui</p>
             <span class="fechar_botao3">&times;</span>
         </label> 
         <div id="popup3" class="overlay3">
-            <div class="card_projeto">
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-            </div>
-            <div class="card_projeto">
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-            </div>
-            <div class="card_projeto">
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+            <div class="card_projeto" id = "start3">
+                <h2 class="texto_principal_projeto">Premissas</h2>
+                <div class="content_projeto">
+                    <p class="texto_descricao_projeto">O projeto possui como principal interesse <strong>o maior entendimento dos atributos que podem levar ao churn.</strong></p>
+                    <p class="texto_descricao_projeto">O objetivo é destrinchar as características de funcionários e as relações deles com a empresa, para buscar quantificar a possibilidade de um possível churn no decorrer do tempo.</p>
+                    <p class="texto_descricao_projeto indica_lista">O projeto conta com três principais etapas:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">Arquitetura de Dados</li>
+                        <li class="item_projeto">Entendimento e Processamento dos Dados</li>
+                        <li class="item_projeto">Análise dos Dados</li>
+                    </ul>
+                    <p class="texto_descricao_projeto indica_lista">Principais Ferramentas:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">Airflow</li>
+                        <li class="item_projeto">Minio</li>
+                        <li class="item_projeto">SQL</li>
+                        <li class="item_projeto">Python</li>
+                    </ul>
                 </div>
             </div>
             <div class="card_projeto">
-                <h2>Teste</h2>
+                <h2 class="texto_principal_projeto">Arquitetura de Dados</h2>
                 <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-            </div>
-            <div class="card_projeto">
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
-                </div>
-                <h2>Teste</h2>
-                <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                    <p class="texto_descricao_projeto">Nessa etapa, o objetivo foi desenhar a arquitetura, isto é, o caminho pelo qual os dados partiriam desde o computador até a disponibilização para a ferramenta de visualização de dados. Abaixo, pode-se observar o desenho dessa arquitetura:</p>
+                    <img  class = "imagem_projeto" src="imagens/HR_project.drawio.png" alt="Arquitetura dos Dados">
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">Tudo se inicia com os arquivos .xlsx, .json e um arquivo do MySQL que são adicionados ao Data Lake, correspondido aqui pelo Minio.</li>
+                        <li class="item_projeto">Após isso, os dados são processados através de <b>dags</b> no Airflow, juntando esses diferentes arquivos em um único arquivo performático com extensão .parquet</li>
+                        <li class="item_projeto">A partir desse dado em .parquet, as análises exploratórias serão realizadas e também serão realizadas as predições através da utilização e algoritmos de machine learning.</li>
+                        <li class="item_projeto">Ao final da análise, realizou-se uma clusterização, resultando em um arquivo .joblib, ao final da análise exploratória. Já ao final da predição por machine learning, os arquivos de database.csv e o arquivo do modol.pkl são gerados e colocados juntos ao arquivo .joblib na camada Curated.</li>
+                    </ul>
+                    <p class="texto_descricao_projeto">Essa é uma arquitetura simples e totalmente on premise, que utiliza os conceitos de Data Lake e automação das etapas com o Minio e o Airflow, respectivamente. O propósito maior dessa arquitetura é criar um pipeline de entrada de dados coeso para um melhor processamento e análise. Mesmo simples, ela se mostra eficaz ao trabalhar com diferentes tipos de dados e ter todo o processamento atribuído em linguagem python, desde as dags no Airflow até a análise utilizando bibliotecas como Pandas, Matplotlibe e Seaborn e finalizando com as etapas de Machine Learning.</p>
                 </div>
             </div>
             <div class="card_projeto">
-                <h2>Teste</h2>
+                <h2 class="texto_principal_projeto">Entendimento e Processamento dos Dados</h2>
                 <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                    <p class="texto_descricao_projeto">O case consiste em 6 arquivos com extensão .xlsx (Excel), 1 arquivo no formato .json e 1 arquivo advindo de um banco de dados MySQL:</p>
+                    <p class="texto_descricao_projeto sub_titulo">Os arquivos employee_date_hour_0, employee_date_hour_1, employee_date_hour_2, employee_date_hour_3, employee_date_hour_4 e employee_date_hour_5 tem como colunas:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">emp_id[string]: ID do empregado</li>
+                        <li class="item_projeto">data[timestamp]: Data referente ao dia trabalhado</li>
+                        <li class="item_projeto">hora[int]: quantidade de horas trabalhadas no determinado dia</li>
+                    </ul>
+                    <p class="texto_descricao_projeto sub_titulo">O arquivo .json, employee_performance_evaluation:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">emp_id[string]: ID do empregado</li>
+                        <li class="item_projeto">satisfaction_level[float]: Valor numérico referente ao nível de satisfação do empregado</li>
+                        <li class="item_projeto">last_evaluation[float]:  Valor numérico referente a pontuação na avaliação do empregado</li>
+                    </ul>
+                    <p class="texto_descricao_projeto">O banco de dados chamado de employees é dividido em 4 tabelas: <br></p>
+                    <p class="texto_descricao_projeto sub_titulo">accident:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">emp_no[bigint]: ID do empregado</li>
+                        <li class="item_projeto">Event Description[string]: Descrição do ocorrido no acidente</li>
+                        <li class="item_projeto">Event Keywords[string]: Palavras-chave para destacar o ocorrido no acidente</li>
+                        <li class="item_projeto">Human Factor[string]: Destaque dos possíveis fatores humanos que levaram ao acidente</li>
+                    </ul>
+                    <p class="texto_descricao_projeto sub_titulo">employees:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">emp_no[bigint]: ID do empregado</li>
+                        <li class="item_projeto">birth_date[datetime]: Data completa do nascimento</li>
+                        <li class="item_projeto">first_name[string]: Primeiro nome do funcionário</li>
+                        <li class="item_projeto">last_name[string]: Último nome do funcionário</li>
+                        <li class="item_projeto">gender[string]: Gênero do funcionário</li>
+                        <li class="item_projeto">department[string]:  Departamento em que o funcionário está</li>
+                        <li class="item_projeto">left[bigint]: Valor binário (0 ou 1), indicando se o funcionário deixou a empresa</li>
+                        <li class="item_projeto">hire_date[string]: Data de contratação</li>
+                    </ul>
+                    <p class="texto_descricao_projeto sub_titulo">projects:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">PROJECT_ID[bigint]: ID do projeto</li>
+                        <li class="item_projeto">PROJECT NAME[string]: Nome do Projeto</li>
+                        <li class="item_projeto">PROJECT SCOPE[string]: Escopo do projeto</li>
+                        <li class="item_projeto">last_name[string]: Último nome do funcionário</li>
+                        <li class="item_projeto">TYPE[string]: Tipo do projeto</li>
+                        <li class="item_projeto">STATUS[string]: Status atual do projeto</li>
+                        <li class="item_projeto">% COMPLETE[bigint]: Porcentagem de conclusão do projeto, dado seu escopo</li>
+                        <li class="item_projeto">PROJECT BUDGET[string]: Orçamento disponível para realização do projeto</li>
+                    </ul>
+                    <p class="texto_descricao_projeto sub_titulo">projects_emp:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">EMP_ID[bigint]: ID do empregado</li>
+                        <li class="item_projeto">PROJECT_ID[bigint]: ID do projeto</li>
+                    </ul>
+                    <p class="texto_descricao_projeto sub_titulo">salaries:</p>
+                    <ul class="lista_item_projeto">
+                        <li class="item_projeto">EMP_ID[bigint]: ID do empregado</li>
+                        <li class="item_projeto">SALARY[string]: Valor do salário do empregado</li>
+                    </ul>
+                    <p class="texto_descricao_projeto">Para utilização desses dados da melhor maneira, foram criadas dags, utilizando Python e Airflow, para através de joins, principalmente utilizando os ids (emp_id,EMP_ID, EMP_NO e PROJECT_ID). Para isso foram modificados alguns nomes de colunas, alguns tipos das colunas e por fim a realização da união das tabelas. </p>
+                    <p class="texto_descricao_projeto">Os arquivos unificados e já alterados foram guardados em um arquivo .parquet, que para o ínicio da análise foi verificada a existência de dados nulos. Como existiam poucas linhas com dados nulos, essas foram retiradas do conjunto de dados, seguindo dessa forma para a análise.</p>
                 </div>
-                <h2>Teste</h2>
+            </div>
+            <div class="card_projeto">
+                <h2 class="texto_principal_projeto">Análise dos Dados</h2>
                 <div class="content1">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis est assumenda vero amet suscipit quisquam quaerat labore molestias. Quisquam nisi accusamus ab itaque placeat, voluptates saepe nihil labore tempora consequuntur.</p>
+                    <p class="texto_descricao_projeto">Na etapa de Análise Exploratória de Dados foram descobertos os vários insights importantes abaixo, através de cruzamentos entre os dados utilizando as bibliotecas disponíveis no Python:</p>
+                    <p class="texto_descricao_projeto indice_analise"><strong>1 - Matriz de Correlação (Heatmap)</strong> </p>
+                    <img  class = "imagem_projeto" src="imagens/heatmap_analise.png" alt="Matriz de Correlação (Heatmap)">
+                    <li class="item_projeto">Existe uma correlação positiva entre os atributos projectCount e Evaluation.</li>
+                    <li class="item_projeto">Faz sentido que empregados que estão envolvidos em mais projetos, trabalham mais e tem melhor avaliação.</li>
+                    <li class="item_projeto">Existe uma correlação negativa entre os atributos satisfaction e turnover.</li>
+                    <li class="item_projeto">Podemos assumir que empregados que mais deixam a empresa estão menos satisfeitos.</li>
+                    <p class="texto_descricao_projeto indice_analise"><strong>2 - Distribuição dos Atributos</strong> </p>
+                    <img  class = "imagem_projeto" src="imagens/distribuicao_atributos.png" alt="Distribuição dos Atributos">
+                    <p class="texto_descricao_projeto">Examinando a distribuição de alguns atributos do conjunto de dados:</p>
+                    <li class="item_projeto">Satisfaction - Existe um pico de empregados com baixa satisfação, mas a maior concentração está em 60 a 80.</li>
+                    <li class="item_projeto">Evaluation - Temos uma distribuição bimodal de empregados com avaliações baixas, menor que de 60 e altas, maior que 80.</li>
+                    <li class="item_projeto">AverageMonthlyHours - A concentração da quantidade de horas trabalhadas nos últimos 3 meses está ao redor da média em 275 horas.</li>
+                    <p class="texto_descricao_projeto indice_analise"><strong>3 - Salário x Turnover</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/turnover_salario.png" alt="Salário x Turnover">
+                    <p class="texto_descricao_projeto">Analisando-se a relação entre salário e turnover no conjunto de dados:</p>
+                    <li class="item_projeto">A maioria dos empregados que saíram tinha salário baixo ou médio.</li>
+                    <li class="item_projeto">Quase nenhum empregado com alto salário deixou a empresa.</li>
+                    <p class="texto_descricao_projeto indice_analise"><strong>4 - (Departamento x Turnover) e (Departamento x Salários)</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/turnover_departamentos1.png" alt="Departamento x Turnover">
+                    <img  class = "imagem_projeto" src="imagens/departamentos_salario.png" alt="Departamento x Turnover">
+                    <p class="texto_descricao_projeto">Analisando-se mais informações sobre os departamentos da empresa:</p>
+                    <li class="item_projeto">Os departamentos de vendas, técnico e suporte são top 3 departamentos com maior índice de turnover.</li>
+                    <li class="item_projeto">O departamento management tem o menor volume de turnover.</li>
+                    <p class="texto_descricao_projeto indice_analise"><strong>5 - Quantidade de Projetos x Turnover</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/turnover_numprojetos.png" alt="Quantidade de Projetos x Turnover">
+                    <p class="texto_descricao_projeto">Insights interessantes que se podem encontrar aqui:</p>
+                    <li class="item_projeto">Mais da metade dos empregados com 2,6 e 7 projetos deixam a empresa.</li>
+                    <li class="item_projeto">A maioria dos empregados que permancem na empresa estão envolvidos de 3 à 5 projetos.</li>
+                    <li class="item_projeto">Todos os empregados que estavam inseridos 7 projetos deixaram a empresa.</li>
+                    <li class="item_projeto">Existe uma pequena tendência de crescimento no índice de turnover em relação à quantidade de projetos.</li>
+                    <p class="texto_descricao_projeto indice_analise"><strong>6 - Avaliação x Turnover</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/distribuicao_nota_avaliacao_turnover.png" alt="Avaliação x Turnover">
+                    <p class="texto_descricao_projeto">Insights interessantes que se podem encontrar aqui:</p>
+                    <li class="item_projeto">Temos uma distribuição bimodal para o conjunto que deixou a empresa.</li>
+                    <li class="item_projeto">Colaboradores com baixa performance tendem a deixar a empresa.</li>
+                    <li class="item_projeto">Colaboradores com alta performance tendem a deixar a empresa.</li>
+                    <li class="item_projeto">O ponto ideal para os funcionários que permaneceram está dentro da avaliação de 60 à 80.</li>
+                    <p class="texto_descricao_projeto indice_analise"><strong>7 -Satisfação x Turnover</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/distribuicao_satisfacao_turnover.png" alt="Avaliação x Avaliação x Turnover">
+                    <li class="item_projeto">Empregados com o nível de satisfação em 20 ou menos tendem a deixar a empresa.</li>
+                    <li class="item_projeto">Empregados com o nível de satisfação em até 50 tem maior probabilidade de deixar a empresa também.</li>
+                    <p class="texto_descricao_projeto indice_analise"><strong>8 - Avaliação x Quantidade de Projetos</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/numprojeto_avaliacao.png" alt = "Avaliação x Quantidade de Projetos">
+                    <li class="item_projeto">Há um aumento na avaliação para os funcionários que realizaram mais projetos dentro do grupo de quem deixou a empresa.</li>
+                    <li class="item_projeto">Para o grupo de pessoas que permaneceram na empresa, os empregados tiveram uma pontuação de avaliação consistente, apesar do aumento nas contagens de projetos.</li>
+                    <li class="item_projeto">Empregados que permaneceram na empresa tiveram uma avaliação média em torno de 70%, mesmo com o número de projetos crescendo.</li>
+                    <li class="item_projeto">Esta relação muda drasticamente entre os empregados que deixaram a empresa. A partir de 3 projetos, as médias de avaliação aumentam consideravelmente.</li>
+                    <li class="item_projeto">Empregados que tinham dois projetos e uma péssima avaliação saíram.</li>
+                    <li class="item_projeto">Empregados com mais de 3 projetos e avaliações altas deixaram a empresa.</li>
+                    <p class="texto_descricao_projeto indice_analise"><strong>9 -  Avaliação x Satisfação</strong></p>
+                    <img  class = "imagem_projeto" src="imagens/satisfacao_avaliacao.png" alt = "Avaliação x Satisfação">
+                    <p class="texto_descricao_projeto">A partir desse cruzamento, pode-se observar 3 diferentes grupos segregados:</p>
+                    <p class="texto_descricao_projeto"><strong>Cluster 1 (Empregados insatisfeitos e trabalhadores):</strong> A satisfação foi inferior a 20 e as avaliações foram superiores a 75.</p>
+                    <li class="item_projeto">Há um aumento na avaliação para os funcionários que realizaram mais projetos dentro do grupo de quem deixou a empresa.</li>
+                    <p class="texto_descricao_projeto"><strong>Cluster 2 (Empregados ruins e insatisfeitos):</strong> Satisfação entre 35 à 50 e as suas avaliações abaixo de ~ 58.</p>
+                    <p class="texto_descricao_projeto"><strong>Cluster 3 (Empregados satisfeitos e trabalhadores):</strong> Satisfação entre 75 à 90 e avaliações superiores a 80.</p>
+                    <li class="item_projeto">O que poderia significar que os funcionários neste grupo eram "ideais".</li>
+                    <li class="item_projeto">Eles amavam seu trabalho e eram altamente avaliados por seu desempenho.</li>
+                </div>
+            </div>
+            <div class="card_projeto">
+                <h2 class="texto_principal_projeto">Conclusão</h2>
+                <div class="content1">
+                    <li class="item_projeto">A empresa tem uma rotatividade de 24%</li>
+                    <li class="item_projeto">Podemos assumir que os empregados que mais deixam a empresa estão menos satisfeitos.</li>
+                    <li class="item_projeto">Existe um valor considerável de empregados insatisfeitos.</li>
+                    <li class="item_projeto">A maioria dos empregados que saíram tinha salário baixo ou médio.</li>
+                    <li class="item_projeto">Os departamentos de vendas, técnico e suporte são top 3 departamentos com maior índice de turnover.</li>
+                    <li class="item_projeto">Todos os empregados que estavam inseridos sem muitos projetos deixaram a empresa.</li>
+                    <li class="item_projeto">Colaboradores com baixa performance tendem a deixar a empresa.</li>
+                    <li class="item_projeto">Colaboradores insatisfeitos com a empresa têm uma maior tendência para evadir.</li>
+                    <p class="texto_descricao_projeto">Esses fatores podem auxiliar na tomada de de decisões estratégicas pela equipe de RH em conjunto com outras áreas como Financeiro, para entender melhor o perfil das pessoas que tendem a deixar a empresa, se o problema (não único, mas claramente sempre expoente) do salário pode ser contornado de outras maneiras, como benefícios. Ademais, a compreensão dos dados também ajuda a entender a desmotivação de alguns colaboradores, visto que mesmoc com salários melhores e anos de companhia, eles podem vir a se sentir desmotivados ou sem novos desafios. Logo casos opostos com soluções distintas que podem ser melhor entendidos através de uma análise dos dados.</p>
+                    <p class="texto_descricao_projeto">A arquitetura já está preparada para a inclusão de uma etapa de machine learning, buscando-se prever futuras possibilidades de saídas de profissionais para enriquecer ainda mais as estratégias para redução do número de turnover.</p>
                 </div>
             </div>
         </div>
@@ -365,7 +581,6 @@
     </div>
     
    </footer> 
-<script src="js/projetos.js"></script>
 <script src = "js/main.js"></script>
 </body>
 </html>

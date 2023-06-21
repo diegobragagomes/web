@@ -1,3 +1,8 @@
+.home_link {
+    text-decoration: none;
+    color: var(--cor_fundo2);
+}
+
 .container_titulo {
     display: none;
 }
@@ -20,7 +25,6 @@
 
 .cabecalho {
     display: flex;
-    flex-wrap: wrap;
     background-color: var(--cor_fundo);
     justify-content: space-between;
     align-items: center;
@@ -32,7 +36,6 @@
 
 .container {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 
 }
@@ -111,7 +114,6 @@
 
 .troca_dark {
     display: flex;
-    flex-wrap: wrap;
     align-items: center; 
     gap: 5px;
 }

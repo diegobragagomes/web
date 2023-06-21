@@ -15,7 +15,6 @@ hr {
 
 .rodape_imagens {
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
     margin: 0.5rem 0 0 40%;
 }
