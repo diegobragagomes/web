@@ -14,6 +14,7 @@ const objetivo= document.querySelector(".objetivo");
 const start_overlay = document.querySelector("#start");
 const start_overlay2 = document.querySelector("#start2");
 const start_overlay3 = document.querySelector("#start3");
+const width_window = window.innerWidth;
 
 
 /*Toggle dark mode*/
@@ -33,77 +34,157 @@ if (+window.localStorage.getItem("preferDark")) {
 
 
 overlay.addEventListener("click",() => {
-    if (button1.checked === true) {
-        projeto_flip.style.height = "calc(100vh - 100px)"
-        projeto_flip2.style.display = "none";
-        projeto_flip3.style.display = "none";
-        rodape.style.display = "none";
-        objetivo.style.display = "none";
-        start_overlay.scrollIntoView({
-            block: 'center'
-        })
+    if (width_window >= 1024){
+        if (button1.checked === true) {
+            projeto_flip.style.height = "calc(100vh - 100px)"
+            projeto_flip2.style.display = "none";
+            projeto_flip3.style.display = "none";
+            rodape.style.display = "none";
+            objetivo.style.display = "none";
+            start_overlay.scrollIntoView({
+                block: 'center'
+            })
+        }
+        
+        else {
+            projeto_flip.style.height = "100vh";
+            projeto_flip2.style.display = "flex";
+            projeto_flip3.style.display = "flex";
+            rodape.style.display = "flex";
+            objetivo.style.display = "flex";
+            projeto_flip.style.position = "static";
+            projeto_flip.scrollIntoView({
+                block: 'center'
+            })
+        }
     }
-    
+
     else {
-        projeto_flip.style.height = "100vh";
-        projeto_flip2.style.display = "flex";
-        projeto_flip3.style.display = "flex";
-        rodape.style.display = "flex";
-        objetivo.style.display = "flex";
-        projeto_flip.style.position = "static";
-        projeto_flip.scrollIntoView({
-            block: 'center'
-        })
+        if (button1.checked === true) {
+            projeto_flip.style.height = "calc(100vh - 100px)"
+            projeto_flip2.style.display = "none";
+            projeto_flip3.style.display = "none";
+            rodape.style.display = "none";
+            objetivo.style.display = "none";
+            start_overlay.scrollIntoView({
+                block: 'center'
+            })
+        }
+        
+        else {
+            projeto_flip.style.height = "50vh"
+            projeto_flip2.style.display = "flex";
+            projeto_flip3.style.display = "flex";
+            rodape.style.display = "block";
+            objetivo.style.display = "flex";
+            projeto_flip.style.position = "static";
+            projeto_flip.scrollIntoView({
+                block: 'center'
+            })
+        }
     }
 })
 
 
 overlay2.addEventListener("click",() => {
-    if (button2.checked === true) {
-        projeto_flip.style.display = "none";
-        projeto_flip3.style.display = "none";
-        rodape.style.display = "none";
-        objetivo.style.display = "none";
-        projeto_flip2.style.height = "calc(100vh - 100px)";
-        start_overlay2.scrollIntoView({
-            block: 'center'
-        })
+    if (width_window >= 1024){
+        if (button2.checked === true) {
+            projeto_flip.style.display = "none";
+            projeto_flip3.style.display = "none";
+            rodape.style.display = "none";
+            objetivo.style.display = "none";
+            projeto_flip2.style.height = "calc(100vh - 100px)";
+            start_overlay2.scrollIntoView({
+                block: 'center'
+            })
+            
+        }
         
+        else {
+            projeto_flip2.style.height = "100vh"
+            projeto_flip3.style.display = "flex";
+            rodape.style.display = "flex";
+            projeto_flip.style.display = "flex";
+            objetivo.style.display = "flex";
+            projeto_flip2.scrollIntoView({
+                block: 'center'
+            })
+        }
     }
-    
+
     else {
-        projeto_flip2.style.height = "100vh"
-        projeto_flip3.style.display = "flex";
-        rodape.style.display = "flex";
-        projeto_flip.style.display = "flex";
-        objetivo.style.display = "flex";
-        projeto_flip2.scrollIntoView({
-            block: 'center'
-        })
+        if (button2.checked === true) {
+            projeto_flip.style.display = "none";
+            projeto_flip3.style.display = "none";
+            rodape.style.display = "none";
+            objetivo.style.display = "none";
+            projeto_flip2.style.height = "calc(100vh - 100px)";
+            start_overlay2.scrollIntoView({
+                block: 'center'
+            })
+            
+        }
+        
+        else {
+            projeto_flip2.style.height = "50vh"
+            projeto_flip3.style.display = "flex";
+            rodape.style.display = "block";
+            projeto_flip.style.display = "flex";
+            objetivo.style.display = "flex";
+            projeto_flip2.scrollIntoView({
+                block: 'center'
+            })
+        }
     }
 })
 
 overlay3.addEventListener("click",() => {
-    if (button3.checked === true) {
-        projeto_flip.style.display = "none";
-        projeto_flip2.style.display = "none";
-        rodape.style.display = "none";
-        objetivo.style.display = "none";
-        projeto_flip3.style.height = "calc(100vh - 100px)";
-        start_overlay3.scrollIntoView({
-            block: 'center'
-        })
+    if (width_window >= 1024){
+        if (button3.checked === true) {
+            projeto_flip.style.display = "none";
+            projeto_flip2.style.display = "none";
+            rodape.style.display = "none";
+            objetivo.style.display = "none";
+            projeto_flip3.style.height = "calc(100vh - 100px)";
+            start_overlay3.scrollIntoView({
+                block: 'center'
+            })
+        }
+        
+        else {
+            projeto_flip3.style.height = "100vh"
+            projeto_flip.style.display = "flex";
+            projeto_flip2.style.display = "flex";
+            rodape.style.display = "flex";
+            objetivo.style.display = "flex";
+            projeto_flip3.scrollIntoView({
+                block: 'center'
+            })
+        }
     }
     
     else {
-        projeto_flip3.style.height = "100vh"
-        projeto_flip.style.display = "flex";
-        projeto_flip2.style.display = "flex";
-        rodape.style.display = "flex";
-        objetivo.style.display = "flex";
-        projeto_flip3.scrollIntoView({
-            block: 'center'
-        })
+        if (button3.checked === true) {
+            projeto_flip.style.display = "none";
+            projeto_flip2.style.display = "none";
+            rodape.style.display = "none";
+            objetivo.style.display = "none";
+            projeto_flip3.style.height = "calc(100vh - 100px)";
+            start_overlay3.scrollIntoView({
+                block: 'center'
+            })
+        }
+        
+        else {
+            projeto_flip3.style.height = "50vh"
+            projeto_flip.style.display = "flex";
+            projeto_flip2.style.display = "flex";
+            rodape.style.display = "block";
+            objetivo.style.display = "flex";
+            projeto_flip3.scrollIntoView({
+                block: 'center'
+            })
+        }
     }
 })
 

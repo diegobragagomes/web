@@ -113,7 +113,7 @@
                 <h2 class="texto_principal_projeto">Arquitetura de Dados</h2>
                 <div class="content1">
                     <p class="texto_descricao_projeto">Nessa etapa, o objetivo foi desenhar a arquitetura, isto é, o caminho pelo qual os dados partiriam desde o computador até a disponibilização para a ferramenta de visualização de dados. Abaixo, pode-se observar o desenho dessa arquitetura:</p>
-                    <img  class = "imagem_projeto" src="imagens/Credit_Card_Project.drawio.png" alt="Arquitetura dos Dados">
+                    <img  class = "imagem_projeto desktop_projeto" src="imagens/Credit_Card_Project.drawio.png" alt="Arquitetura dos Dados">
                     <ul class="lista_item_projeto">
                         <li class="item_projeto">Tudo se inicia com o download dos dados do case <a class = "link_projeto" href="https://www.kaggle.com/datasets/yingwurenjian/chicago-divvy-bicycle-sharing-data">Chicago Divvy</a> no Kaggle.</li>
                         <li class="item_projeto">Após isso, os dados são inseridos em um bucket, chamado de Raw, no S3 dentro da AWS. Esses dados chegarão brutos, em .csv, e serão processados pelo EMR (Elastic Map Reduce) e serão salvos em .parquet em outro bucket no S3, chamado de Curated.</li>

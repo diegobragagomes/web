@@ -10,6 +10,8 @@ hr {
 }
 
 .rodape_titulo {
+    text-align: center;
+    font-size: 14px;
     color: var(--cor_fundo2)
 }
 
@@ -43,8 +45,10 @@ hr {
     }
 
     .rodape_titulo {
+        font-size: 24px;
         width: 70vw;
         margin-left: 1rem;
+        text-align: left;
     }
 
     .rodape_imagens {

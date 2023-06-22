@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     background-image: linear-gradient(to bottom, rgb(0 0 0 /0 ) 80%,  rgb(0 0 0 /0.85 ) 100%),url("../imagens/joshua-fernandez-8zvMYnhIpmA-unsplash.jpg");
     background-position: 50% 50%;
@@ -71,15 +71,21 @@ display: none;
     display: block;
 }
 
+.projeto_rotulo1 {
+    display: flex;
+    flex-direction: column;
+}
+
 .projeto_botao1, .projeto_botao2, .projeto_botao3 {
     font-family: var(--fonte_principal);
     font-weight: 700;
-    font-size: 28px;
+    font-size: 13px;
+    word-break:break-all;
     text-decoration: none;
     color: black;
     background-color:rgba(255,255,255,0.35);
     box-shadow: 0 0 10px 1px rgba(0,0,0,0.35);
-    padding: 4rem;
+    padding: 1.5rem;
     border-radius: 30%/70%;
     border: 2px solid black;
     cursor: pointer;
@@ -87,11 +93,11 @@ display: none;
 }
 
 .projeto_indicacao1, .projeto_indicacao2, .projeto_indicacao3{
-    font-size: 24px;
+    font-size: 14px;
     font-family: var(--fonte_secundaria);
     font-weight: 700;
     color: black;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     text-align: center;
 }
 
@@ -108,8 +114,8 @@ display: none;
 
 .fechar_botao, .fechar_botao2, .fechar_botao3 {
     position: fixed;
-    top: 14%;
-    right: 3%;
+    top: 7.5%;
+    right: 2%;
     transition: all 200ms;
     font-size: 2rem;
     text-decoration: none;
@@ -126,9 +132,9 @@ display: none;
     border: 1px solid var(--cor_fundo2);
     filter: drop-shadow(1px 0px 1px var(--cor_fundo2));
     border-radius: 15px;
-    margin: 2em 9em;
-    padding: 3em 3em;
-    height: 70vh;
+    margin: 1.5em 1.5em;
+    padding: 2em 2em;
+    height: 50vh;
     width: 70vw;
     overflow-y: auto;
 }
@@ -207,101 +213,19 @@ strong {
 
 
 @media screen and (min-width: 1024px) {
+
     .projeto_flip1,.projeto_flip2, .projeto_flip3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 100vh;
-        width: 100vw;
-        background-image: linear-gradient(to bottom, rgb(0 0 0 /0 ) 80%,  rgb(0 0 0 /0.85 ) 100%),url("../imagens/joshua-fernandez-8zvMYnhIpmA-unsplash.jpg");
-        background-position: 50% 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-sizing: border-box;
-    }
-
-    .projeto_flip2 {
-        background-image: linear-gradient(to bottom, rgb(0 0 0 /0.75 ) 0%, rgb(0 0 0 /0 ) 10%,rgb(0 0 0 /0 ) 80%,  rgb(0 0 0 /0.85 ) 100% ), url("../imagens/card_trans_1024.jpg");
-        background-position: 40% 40%;
-    }
-
-    .projeto_flip3 {
-        background-image: linear-gradient(to bottom, rgb(0 0 0 /0.75 ) 0%, rgb(0 0 0 /0 ) 10%),url("../imagens/hr_1024.jpg");
-        background-position: 50% 50%;
-    }
-
-    .projeto_flip_botao,.projeto_flip_botao2,.projeto_flip_botao3, .overlay, .fechar_botao, .overlay2, .fechar_botao2, .overlay3, .fechar_botao3{
-        display: none;
-    }
-
-    .projeto_flip_botao:checked~.overlay{
-        display:block;
-        visibility: visible;
-        opacity: 1;
-
-    }
-
-    .projeto_flip_botao2:checked~.overlay2{
-        display: block;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .projeto_flip_botao3:checked~.overlay3{
-        display: block;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .projeto_flip_botao:checked~.projeto_rotulo > .projeto_botao1,
-    .projeto_flip_botao:checked~.projeto_rotulo >.projeto_indicacao1{
-    display: none;
-    }
-
-    .projeto_flip_botao:checked~.projeto_rotulo > .fechar_botao {
-        display: block;
-    }
-
-    .projeto_flip_botao2:checked~.projeto_rotulo2 > .projeto_botao2,
-    .projeto_flip_botao2:checked~.projeto_rotulo2 > .projeto_indicacao2 {
-        display: none;
-    }
-    
-    .projeto_flip_botao2:checked~.projeto_rotulo2 > .fechar_botao2 {
-        display: block;
-    }
-
-    .projeto_flip_botao3:checked~.projeto_rotulo3 > .projeto_botao3,
-    .projeto_flip_botao3:checked~.projeto_rotulo3 > .projeto_indicacao3 {
-        display: none;
-    }
-    
-    .projeto_flip_botao3:checked~.projeto_rotulo3 > .fechar_botao3 {
-        display: block;
     }
 
     .projeto_botao1, .projeto_botao2, .projeto_botao3 {
-        font-family: var(--fonte_principal);
-        font-weight: 700;
         font-size: 28px;
-        text-decoration: none;
-        color: black;
-        background-color:rgba(255,255,255,0.35);
-        box-shadow: 0 0 10px 1px rgba(0,0,0,0.35);
+        word-break:normal;
         padding: 4rem;
-        border-radius: 30%/70%;
-        border: 2px solid black;
-        cursor: pointer;
-        z-index: 0;
     }
 
     .projeto_indicacao1, .projeto_indicacao2, .projeto_indicacao3{
         font-size: 24px;
-        font-family: var(--fonte_secundaria);
-        font-weight: 700;
-        color: black;
-        margin-top: 1rem;
-        text-align: center;
     }
 
     .overlay,.overlay2, .overlay3 {
@@ -316,310 +240,27 @@ strong {
     }
 
     .fechar_botao, .fechar_botao2, .fechar_botao3 {
-        position: fixed;
         top: 14%;
         right: 3%;
-        transition: all 200ms;
-        font-size: 2rem;
-        text-decoration: none;
-        color: var(--cor_fundo2);
-        cursor: pointer;
-        z-index: 8;
     }
 
     .card_projeto {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        background-color: var(--cor_fundo);
-        border: 1px solid var(--cor_fundo2);
-        filter: drop-shadow(1px 0px 1px var(--cor_fundo2));
-        border-radius: 15px;
         margin: 2em 9em;
         padding: 3em 3em;
         height: 70vh;
-        width: 70vw;
-        overflow-y: auto;
-    }
-
-    .texto_principal_projeto {
-        color: var(--cor_fundo2);
-        font-family: var(--fonte_principal);
-        font-size: 20px;
-        font-weight: 700;
-    }
-
-    .texto_descricao_projeto {
-        color : var(--cor_fundo2);
-        font-family: var(--fonte_principal);
-        margin: 1rem 0;
-        line-height: 1.5rem;
-    }
-
-    .sub_titulo {
-        font-weight: 700;
-        margin-top: 3rem;
-    }
-
-    .indica_lista {
-        margin-top: 1rem;
-        font-weight: 700;
-    }
-
-    .lista_item_projeto {
-        color: var(--cor_fundo2);
-        list-style-type:disc;
-        margin-left: 1rem;
-        line-height: 1.5rem;
-        
-    }
-
-    .item_projeto {
-        color: var(--cor_fundo2);
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .imagem_projeto {
-        margin-bottom: 1rem;
-    }
-
-    .indice_analise {
-        margin-top: 4rem;
-    }
-
-    .descricao_titulo {
-        font-size: 26px;
-        color: var(--cor_fundo2);
-    }
-
-    .link_projeto {
-        color: var(--cor_realce);
-        text-decoration: none;
-        font-weight: 700;
-    }
-
-    strong {
-        font-weight: 700;
-    }
-
-    @keyframes fadeIn {
-        0% { opacity: 0;}
-        100% {opacity: 1;}
-    }
-
-    @keyframes fadeOut {
-        0% { opacity: 1;}
-        100% {opacity: 0;}
     }
 
 }
 
 @media screen and (min-width: 1728px) {
-    .projeto_flip1,.projeto_flip2, .projeto_flip3 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-        width: 100vw;
-        background-image: linear-gradient(to bottom, rgb(0 0 0 /0 ) 80%,  rgb(0 0 0 /0.85 ) 100%),url("../imagens/joshua-fernandez-8zvMYnhIpmA-unsplash.jpg");
-        background-position: 50% 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
-        box-sizing: border-box;
-    }
-
-    .projeto_flip2 {
-        background-image: linear-gradient(to bottom, rgb(0 0 0 /0.75 ) 0%, rgb(0 0 0 /0 ) 10%,rgb(0 0 0 /0 ) 80%,  rgb(0 0 0 /0.85 ) 100% ), url("../imagens/card_trans_1024.jpg");
-        background-position: 40% 40%;
-    }
-
-    .projeto_flip3 {
-        background-image: linear-gradient(to bottom, rgb(0 0 0 /0.75 ) 0%, rgb(0 0 0 /0 ) 10%),url("../imagens/hr_1024.jpg");
-        background-position: 50% 50%;
-    }
-
-    .projeto_flip_botao,.projeto_flip_botao2,.projeto_flip_botao3, .overlay, .fechar_botao, .overlay2, .fechar_botao2, .overlay3, .fechar_botao3{
-        display: none;
-    }
-
-    .projeto_flip_botao:checked~.overlay{
-        display:block;
-        visibility: visible;
-        opacity: 1;
-
-    }
-
-    .projeto_flip_botao2:checked~.overlay2{
-        display: block;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .projeto_flip_botao3:checked~.overlay3{
-        display: block;
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .projeto_flip_botao:checked~.projeto_rotulo > .projeto_botao1,
-    .projeto_flip_botao:checked~.projeto_rotulo >.projeto_indicacao1{
-    display: none;
-    }
-
-    .projeto_flip_botao:checked~.projeto_rotulo > .fechar_botao {
-        display: block;
-    }
-
-    .projeto_flip_botao2:checked~.projeto_rotulo2 > .projeto_botao2,
-    .projeto_flip_botao2:checked~.projeto_rotulo2 > .projeto_indicacao2 {
-        display: none;
-    }
-    
-    .projeto_flip_botao2:checked~.projeto_rotulo2 > .fechar_botao2 {
-        display: block;
-    }
-
-    .projeto_flip_botao3:checked~.projeto_rotulo3 > .projeto_botao3,
-    .projeto_flip_botao3:checked~.projeto_rotulo3 > .projeto_indicacao3 {
-        display: none;
-    }
-    
-    .projeto_flip_botao3:checked~.projeto_rotulo3 > .fechar_botao3 {
-        display: block;
-    }
-
-    .projeto_botao1, .projeto_botao2, .projeto_botao3 {
-        font-family: var(--fonte_principal);
-        font-weight: 700;
-        font-size: 28px;
-        text-decoration: none;
-        color: black;
-        background-color:rgba(255,255,255,0.35);
-        box-shadow: 0 0 10px 1px rgba(0,0,0,0.35);
-        padding: 4rem;
-        border-radius: 30%/70%;
-        border: 2px solid black;
-        cursor: pointer;
-        z-index: 0;
-    }
-
-    .projeto_indicacao1, .projeto_indicacao2, .projeto_indicacao3{
-        font-size: 24px;
-        font-family: var(--fonte_secundaria);
-        font-weight: 700;
-        color: black;
-        margin-top: 1rem;
-        text-align: center;
-    }
-
-    .overlay,.overlay2, .overlay3 {
-        height: calc(100vh - 100px);
-        width: 100vw;
-        background-color: var(--cor_fundo);
-        visibility: hidden;
-        opacity: 0;
-        animation: fadeIn 1s;
-        position: fixed;
-        overflow-y:scroll;
-    }
-
     .fechar_botao, .fechar_botao2, .fechar_botao3 {
-        position: fixed;
         top: 10%;
         right: 3%;
-        transition: all 200ms;
-        font-size: 2rem;
-        text-decoration: none;
-        color: var(--cor_fundo2);
-        cursor: pointer;
-        z-index: 8;
     }
 
     .card_projeto {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        background-color: var(--cor_fundo);
-        border: 1px solid var(--cor_fundo2);
-        filter: drop-shadow(1px 0px 1px var(--cor_fundo2));
-        border-radius: 15px;
         margin: 2em 12em;
         padding: 3em 5em;
-        height: 70vh;
-        width: 70vw;
-        overflow-y: auto;
-    }
-
-    .texto_principal_projeto {
-        color: var(--cor_fundo2);
-        font-family: var(--fonte_principal);
-        font-size: 20px;
-        font-weight: 700;
-    }
-
-    .texto_descricao_projeto {
-        color : var(--cor_fundo2);
-        font-family: var(--fonte_principal);
-        margin: 1rem 0;
-        line-height: 1.5rem;
-    }
-
-    .sub_titulo {
-        font-weight: 700;
-        margin-top: 3rem;
-    }
-
-    .indica_lista {
-        margin-top: 1rem;
-        font-weight: 700;
-    }
-
-    .lista_item_projeto {
-        color: var(--cor_fundo2);
-        list-style-type:disc;
-        margin-left: 1rem;
-        line-height: 1.5rem;
-        
-    }
-
-    .item_projeto {
-        color: var(--cor_fundo2);
-        margin-top: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .imagem_projeto {
-        margin-bottom: 1rem;
-    }
-
-    .indice_analise {
-        margin-top: 4rem;
-    }
-
-    .descricao_titulo {
-        font-size: 26px;
-        color: var(--cor_fundo2);
-    }
-
-    .link_projeto {
-        color: var(--cor_realce);
-        text-decoration: none;
-        font-weight: 700;
-    }
-
-    strong {
-        font-weight: 700;
-    }
-
-    @keyframes fadeIn {
-        0% { opacity: 0;}
-        100% {opacity: 1;}
-    }
-
-    @keyframes fadeOut {
-        0% { opacity: 1;}
-        100% {opacity: 0;}
     }
 
 }
