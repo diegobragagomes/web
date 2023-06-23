@@ -113,7 +113,7 @@
                 <h2 class="texto_principal_projeto">Arquitetura de Dados</h2>
                 <div class="content1">
                     <p class="texto_descricao_projeto">Nessa etapa, o objetivo foi desenhar a arquitetura, isto é, o caminho pelo qual os dados partiriam desde o computador até a disponibilização para a ferramenta de visualização de dados. Abaixo, pode-se observar o desenho dessa arquitetura:</p>
-                    <img  class = "imagem_projeto desktop_projeto" src="imagens/Credit_Card_Project.drawio.png" alt="Arquitetura dos Dados">
+                    <img  class = "imagem_projeto desktop_projeto" srcset="imagens/Credit_Card_Project.drawio.png 1920w" alt="Arquitetura dos Dados">
                     <ul class="lista_item_projeto">
                         <li class="item_projeto">Tudo se inicia com o download dos dados do case <a class = "link_projeto" href="https://www.kaggle.com/datasets/yingwurenjian/chicago-divvy-bicycle-sharing-data">Chicago Divvy</a> no Kaggle.</li>
                         <li class="item_projeto">Após isso, os dados são inseridos em um bucket, chamado de Raw, no S3 dentro da AWS. Esses dados chegarão brutos, em .csv, e serão processados pelo EMR (Elastic Map Reduce) e serão salvos em .parquet em outro bucket no S3, chamado de Curated.</li>
@@ -164,36 +164,36 @@
                 <div class="content1">
                     <p class="texto_descricao_projeto">Com os dados disponíveis no RedShift , conecta-se ao Metabase e o foco se vira para a análise em si. Com isso, alguns cruzamentos entre os dados foram realizados para bucar extrair informações relevantes, entre eles:</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>1 - Quantidade de utilizações por ano </strong> </p>
-                    <img  class = "imagem_projeto" src="imagens/1 -Quantidade_de_utilizações_por_ano.png" alt="Quantidade de utilizações por ano">
+                    <img  class = "imagem_projeto" srcset="imagens/1-Quantidade_de_utilizações_por_ano.png 1920w" alt="Quantidade de utilizações por ano">
                     <p class="texto_descricao_projeto">O gráfico demonstra a variação da quantidade de utilização do serviço ao longo dos anos. A partir dele, nota-se que 2017 correspondente a quase o dobro de utilizações de 2014.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>2 - Quantidade de utilizações por mês e pela média da temperatura</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/2 - Quantidade_de_utilizações_pelo_mês_e_pela_média_e_temperatura.png" alt="Quantidade de utilizações por mês e pela média da temperatura">
+                    <img  class = "imagem_projeto" srcset="imagens/2-Quantidade_de_utilizações_pelo_mês_e_pela_média_e_temperatura.png 1920w" alt="Quantidade de utilizações por mês e pela média da temperatura">
                     <p class="texto_descricao_projeto">Pode-se perceber ao observar o gráfico que conforme a média de temperatura aumenta, o que parece ser ali o final da primavera até o final do verão, as pessoas tendem a utilizar mais o serviço. Isso pode se perceber empiricamente em locais frios como o caso de Chicago, já que com as baixas temperaturas, atividades ao ar livre se tornam mais raras, retirando da lista atividades que dependam do frio.</p>
                     <p class="texto_descricao_projeto">Logo, é intuito que a empresa que coordena o serviço foque mais sua estratégia nesses meses, já que a menos que ela não conseguirá com o fator externo, que no caso é o climático.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>3 - Quantidade de utilizações por mês, pela média de temperatura e pela média da duração da viagem</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/3 - Quantidade_de utilizações_pelo mês_pela_média_de_temperatura_e_pela_média_de_duração_da_viagem.png" alt="Quantidade de utilizações por mês, pela média de temperatura e pela média da duração da viagem">
+                    <img  class = "imagem_projeto" srcset="imagens/3-Quantidade_de_utilizações_pelo_mês_pela_média_de_temperatura_e_pela_média_de_duração_da_viagem.png 1920w" alt="Quantidade de utilizações por mês, pela média de temperatura e pela média da duração da viagem">
                     <p class="texto_descricao_projeto">Seguindo com a análise da utilização pela temperatura, agora há a adição de mais um fator, que é a média da duração da viagem. Cruzando os dados das 3 colunas conjuntamente, é possível perceber que assim como a quantidade de utilizações, o tempo média da duração da viagem também é aumentado no período de maiores médias de temperatura. Sendo, cerca de quase 30% maior em períodos mais quente quando comparado aos períodos mais frios.</p>
                     <p class="texto_descricao_projeto">Isso reforça o foco nesse período mais quente, que se estende desde maio até setembro, aproximadamente.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>4 - Quantidade de utilizações pelo dia da semana</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/4 - Quantidade_de_utilizações_pelo_dia_da_semana.png" alt="Quantidade de utilizações pelo dia da semana">
+                    <img  class = "imagem_projeto" srcset="imagens/4-Quantidade_de_utilizações_pelo_dia_da_semana.png 1920w" alt="Quantidade de utilizações pelo dia da semana">
                     <p class="texto_descricao_projeto">Esse e o próximo gráficos destacarão a relação da utilização das utilizações pelos dias e horas específicos para tentar entender um perfil. Nesse primeiro, pode-se notar uma característica interessante, as utilizações são cerca de 50% superiores em dias de semana que em finais de semana. O que poderia sugerir um efeito de utilização maior com a finalidade de deslocamento para o trabalho ou eventos sociais durante a semana.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>5 - Quantidade de utilizações pela hora do dia</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/5 - Quantidade_de_utilizações_pela_hora_do_dia.png" alt="Quantidade de utilizações pela hora do dia">
+                    <img  class = "imagem_projeto" srcset="imagens/5-Quantidade_de_utilizações_pela_hora_do_dia.png 1920w" alt="Quantidade de utilizações pela hora do dia">
                     <p class="texto_descricao_projeto">Continuando a análise do gráfico anterior, a premissa da utilização com a finalidade do trabalho é reforçada por esse gráfico, já que os horários de maior pico de utilização são entre 8-10 h e 16 - 18 h.</p>
                     <p class="texto_descricao_projeto">Analisando essas possibilidades, uma possível campanha de marketing ou descontos para aumentar a quantidade em horários de menores incidências poderiam ser interessantes.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>6 - Quantidade de utilizações de acordo com o tempo (clima) do dia</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/6 - Quantidade_de_utilizações_por_como_estava_o_tempo_no_dia.png" alt="Quantidade de utilizações de acordo com o tempo (clima) do dia">
+                    <img  class = "imagem_projeto" srcset="imagens/6-Quantidade_de_utilizações_por_como_estava_o_tempo_no_dia.png 1920w" alt="Quantidade de utilizações de acordo com o tempo (clima) do dia">
                     <p class="texto_descricao_projeto">O gráfico demonstra que a esmagadora maioria dos dias de utilização são dias nublados, o que ajuda a dedução de que a influência na utilização por conta de o tempo estar bonito ou não estar o mais apropriado é pequena ou nula.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>7 - Quantidade de utilizações por gênero</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/7 - Quantidade_de_utilizações_pelo_gênero.png" alt="Quantidade de utilizações por gênero">
+                    <img  class = "imagem_projeto" srcset="imagens/7-Quantidade_de_utilizações_pelo_gênero.png 1920w" alt="Quantidade de utilizações por gênero">
                     <p class="texto_descricao_projeto">Nota-se que a grande maioria das utilizações é realizada por homens. Seguindo-se a premissa que as utilizações tem seu foco no deslocamento para o trabalho, poderia se pensar, hipoteticamente, na possibilidade da mobilidade pela diferença na vestimenta entre homens e mulheres, principalmente em um ambiente formal. Ou ainda no fator segurança, por se tratar de uma cidade grande. Nesse caso, apenas hipóteses, que deveriam ser avaliadas para buscar soluções afim de aproximar o público feminino.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>8 - Quantidade de utilizações por tipo de usuário</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/8 - Quantidade_de_utilizações_por_tipo_de_usuário.png" alt="Quantidade de utilizações por tipo de usuário">
+                    <img  class = "imagem_projeto" srcset="imagens/8-Quantidade_de_utilizações_por_tipo_de_usuário.png 1920w" alt="Quantidade de utilizações por tipo de usuário">
                     <p class="texto_descricao_projeto">O gráfico implica que mais de 90% dos usuários são inscritos, isso pode implicar que a política de inscritos está funcionando e poderia ser melhor explorada e/ou as outras opções poderiam ser melhores exploradas ou descartadas. Os casos teriam que ser melhor abordados para se chegar na melhor política possível.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>9 - 10 estações de partida com maior movimento</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/9 - 10_estações_de_partida_com_maior_movimento.png" alt="10 estações de partida com maior movimento">
+                    <img  class = "imagem_projeto" srcset="imagens/9-10_estações_de_partida_com_maior_movimento.png 1920w" alt="10 estações de partida com maior movimento">
                     <p class="texto_descricao_projeto indice_analise"><strong>10 - 10 estações de chegada com maior movimento</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/10 - 10_estações_de_chegada_com_maior_movimento.png" alt="10 estações de chegada com maior movimento">
+                    <img  class = "imagem_projeto" srcset="imagens/10-10_estações_de_chegada_com_maior_movimento.png 1920w" alt="10 estações de chegada com maior movimento">
                     <p class="texto_descricao_projeto">O cruzamento dos dados geram, nesses gráficos, as 10 melhores possibilidades de investimento em uma oferta maior de bicicletas, visto que elas possuem maior volume de utilizações. Ainda mais, as 4 estações com maior volume de utilizações são as mesmas tanto para partida como chegada, o que poderia se explicar pela proximidade de grandes centros corporativos.</p>
                     <p class="texto_descricao_projeto">Mas, o foco deve se dar no quesito que por apresentarem um grande volume, uma maior oferta pode gerar maior número de utilizações e com isso maior retorno.</p>
                 </div>
@@ -242,7 +242,7 @@
                 <h2 class="texto_principal_projeto">Arquitetura de Dados</h2>
                 <div class="content1">
                     <p class="texto_descricao_projeto">Nessa etapa, o objetivo foi desenhar a arquitetura, isto é, o caminho pelo qual os dados partiriam desde o computador até a disponibilização para a ferramenta de visualização de dados. Abaixo, pode-se observar o desenho dessa arquitetura:</p>
-                    <img  class = "imagem_projeto" src="imagens/Credit_Card_Project.drawio.png" alt="Arquitetura dos Dados">
+                    <img  class = "imagem_projeto" srcset="imagens/Credit_Card_Project.drawio.png 1920w" alt="Arquitetura dos Dados">
                     <ul class="lista_item_projeto">
                         <li class="item_projeto">Tudo se inicia com o download dos dados do case <a class = "link_projeto" href="https://www.kaggle.com/datasets/ealtman2019/credit-card-transactions?select=credit_card_transactions-ibm_v2.csv">Card Transaction</a> no Kaggle e o download do .csv do <a class = "link_projeto" href="https://data.bls.gov/cgi-bin/surveymost?bls">CPI Index (CPI-U) [1982-84=100]</a> entre 1988 e 2020.</li>
                         <li class="item_projeto">Após isso, os dados são inseridos em um bucket, chamado de Raw, no S3 dentro da AWS. Esses dados chegarão brutos, em .csv, e serão processados pelo EMR (Elastic Map Reduce) e serão salvos em .parquet em outro bucket no S3, chamado de Curated.</li>
@@ -330,43 +330,43 @@
                 <div class="content1">
                     <p class="texto_descricao_projeto">Com os dados disponíveis no RedShift , conecta-se ao Metabase e o foco se vira para a análise em si. Com isso, dentre as, aproximadamente, <strong>21,5 milhões com uma taxa de 0,02% de fraude , 2000 diferentes usuários e 6146 cartões utilizados</strong> no deccorer dos anos, alguns cruzamentos entre os dados foram realizados para bucar extrair informações relevantes, entre eles:</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>1 - Quantidade de usuários pela Idade Atual </strong> </p>
-                    <img  class = "imagem_projeto" src="imagens/1 - Quantidade de usuários pela Idade Atual-15_06_2023, 03_04_27.png" alt="Quantidade de usuários pela Idade Atual">
+                    <img  class = "imagem_projeto" srcset="imagens/1-Quantidade_de_usuários_pela_Idade_Atual-15_06_2023-03_04_27.png 1920w" alt="Quantidade de usuários pela Idade Atual">
                     <p class="texto_descricao_projeto">Percebe-se, através do gráfico, que a maioria dos 2000 usuários estão dispersos entre 18 e 60 anos, considerados anos de atividade laboral. Ainda, pode-se notar uma queda constante do número de usuários ao passar das idades, tendo como exceção pessoas entre 41 e 50 anos.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>2 - Taxa de pessoas, que tiveram seus cartões em algum problema com fraude, pela idade atual</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/2 - Taxa de pessoas com flag de fraude, de acordo com a idade atual-15_06_2023, 03_04_40.png" alt="Taxa de pessoas, que tiveram seus cartões em algum problema com fraude, pela idade atual">
+                    <img  class = "imagem_projeto" srcset="imagens/2-Taxadepessoascomflagdefraudedeacordocomaidadeatual-15_06_202303_04_40.png 1920w" alt="Taxa de pessoas, que tiveram seus cartões em algum problema com fraude, pela idade atual">
                     <p class="texto_descricao_projeto">Tendo passado pela análise de idade atual, seria plausível presumir que com um maior número de usuários em idades mais baixas, o percentual de fraude deveria seguir essa proporção. Contudo, ao observar o gráfico, é possível verificar uma crescente com o aumento da idade, sendo os jovens entre 18 e 30 anos aqueles com menor percentual de fraude e aqueles acima dos 80 com maior percentual.</p>
                     <p class="texto_descricao_projeto">Dada a leitura que o gráfico permite, é possível começar a teorizar do motivo disso ocorrer. Um dos possíveis motivos é o avanço da tecnologia e as pessoas mais idosas não conseguirem acompanhar o andamento da mesma.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>3 - Taxa de Endividamento por Usuário</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/3 - Taxa de Endividamento por Usuário-15_06_2023, 03_04_49.png" alt="Taxa de Endividamento por Usuário">
+                    <img  class = "imagem_projeto" srcset="imagens/3-TaxadeEndividamentoporUsuário-15_06_202303_04_49.png 1920w" alt="Taxa de Endividamento por Usuário">
                     <p class="texto_descricao_projeto">Primeiramente, para o cálculo da Taxa de Endividamento foi utilizada a Dívida Total e o Ganho Anual por Pessoa, a partir disso foi calculada uma taxa tendo como base o valor da Dívida Total pelo Ganho Anual por Pessoa. Essa taxa é maior ou igual a 0, onde o valor corresponde ao percentual que a Dívida Total representa no Ganho Anual por Pessoa. Depois, ela foi separada em três categorias: baixa, média e alta. Sendo baixa, a faixa entre 0 e 0.5 (não incluso); média, a faixa entre 0.5 (incluso) e 1 (não incluso); e alta, acima de 1(incluso).</p>
                     <p class="texto_descricao_projeto">Nota-se que mais de 67% dos usuários analisados possuem alto grau de endividamento, possuindo dívidas totais que superam, e em alguns casos superam e muito, o ganho anual.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>4 - Quantidade de Usuários pelo FICO Score</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/4 - Quantidade de Usuários pelo FICO Score-15_06_2023, 03_04_59.png" alt="Quantidade de Usuários pelo FICO Score">
+                    <img  class = "imagem_projeto" srcset="imagens/4-QuantidadedeUsuáriospeloFICOScore-15_06_202303_04_59.png 1920w" alt="Quantidade de Usuários pelo FICO Score">
                     <p class="texto_descricao_projeto">O FICO Score pode ser visto como o nosso Serasa Score, para avaliar a saúde do usuário para possíveis futuros contatos com cartão, conta ou financiamento.</p>
                     <p class="texto_descricao_projeto">No gráfico, observa-se que a grande maioria dos usuários se encontra na faixa entre 650 e 799, consideradas boas faixas de Score, sendo bem aceitas nas principais instituições de referência.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>5 - Quantidade de Cartões pelo Tipo e pela Bandeira</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/5 - Quantidade de Cartões pelo Tipo e pela Bandeira-15_06_2023, 03_05_11.png" alt="Quantidade de Cartões pelo Tipo e pela Bandeira">
+                    <img  class = "imagem_projeto" srcset="imagens/5-QuantidadedeCartõespeloTipoepelaBandeira-15_06_202303_05_11.png 1920w" alt="Quantidade de Cartões pelo Tipo e pela Bandeira">
                     <p class="texto_descricao_projeto">Constata-se que a bandeira Mastercard é a mais utilizada nas transações em geral e que, em geral, há preferência pela utilização do cartão de débito. Porém, também é possível se atentar para o fato que na categoria cartão de crédito, a bandeira Visa tem maior quantidade de cartões utilizados.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>6 - Quantidade de pessoas pela Taxa de Endividamento pela Idade Atual</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/6 - Quantidade de pessoas pela Taxa de Endividamento e pela idade atual-15_06_2023, 03_05_23.png" alt="Quantidade de pessoas pela Taxa de Endividamento pela Idade Atual">
+                    <img  class = "imagem_projeto" srcset="imagens/6-QuantidadedepessoaspelaTaxadeEndividamentoepelaidadeatual-15_06_202303_05_23.png 1920w" alt="Quantidade de pessoas pela Taxa de Endividamento pela Idade Atual">
                     <p class="texto_descricao_projeto">É interessante notar que a interseção da taxa de endividamento com a distribuição da idade atual, no contexto dos EUA, pode-se criar uma hipótese de os mais jovens serem mais endividados por conta de possíveis financiamentos, sejam estudantis, hipotecas ou alguma linha de crédito para carro ou negócios. E dessa maneira, ao longo da vida com o desaparecimento dessas grandes dívidas, a taxa de endividamento se inverter, como é possível verificar entre as faixas de idade 51-60 e 61-70, por exemplo.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>7 - Quantidade de Usuários pelo FICO Score e pela Idade Atual</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/7 - Quantidade de Usuários pelo FICO Score e pela Idade Atual-15_06_2023, 03_05_36.png" alt="Quantidade de Usuários pelo FICO Score e pela Idade Atual">
+                    <img  class = "imagem_projeto" srcset="imagens/7-QuantidadedeUsuáriospeloFICOScoreepelaIdadeAtual-15_06_202303_05_36.png 1920w" alt="Quantidade de Usuários pelo FICO Score e pela Idade Atual">
                     <p class="texto_descricao_projeto">É importante frisar que mesmo com o alto endividamento dos mais jovens e por eles serem maioria, o Score em si não é afetado. Isso poderia vir a ser entendido como se o FICO Score fosse mais focado no curto prazo e nos pagamentos realizados pelos usuários, estando em dias com seus débitos atuais, mesmo com a existência de débitos passados. Com isso, haveria uma importância maior para o volume de transações com pagamentos em dia, do que uma correlação positiva com a taxa de endividamento.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>8 - Soma dos Valores Gastos Reajustados por Ano</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/8 - Soma dos Valores Gastos Reajustados por Ano-15_06_2023, 03_05_50.png" alt="Soma dos Valores Gastos Reajustados por Ano">
+                    <img  class = "imagem_projeto" srcset="imagens/8-SomadosValoresGastosReajustadosporAno-15_06_202303_05_50.png 1920w" alt="Soma dos Valores Gastos Reajustados por Ano">
                     <p class="texto_descricao_projeto">Nesse gráfico, saí-se um pouco da perspectiva micro, do usuário, e entra um pouco mais na macroeconomia. Pelo gráfico, que foi calculado se ajustando os gastos de cada transação pelo CPI (indexador de inflação dos EUA, por mês e por ano), é possível observar uma crescente entre 1991 e 2011, com o começo de uma queda suave a partir de 2011 até 2019, não foi utilizado o ano de 2020, por só existir dado de dois meses.</p>
                     <p class="texto_descricao_projeto">Essa crescente inicial poderia ter se dado pelo avanço tecnológico tanto no setor de tecnologia propriamente dito, mas com tudo que ele abarca, inclusive o financeiro, como máquinas de cartão, conta bancária digital, entre outros. Porém, a partir de 2008 com a crise financeira que eclodiu, a economia dos EUA entrou em recessão e demorou anos para se recuperar, com outros fatores externos posteriores a 2011, inclusive a insegurança da população e do setor financeiro, poderiam ter mantido a queda nos anos posteriores.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>9 - Valores Totais Gastos, que tiveram seus cartões em algum problema com fraude, por Ano</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/9 - Valores totais gastos com flags de fraude, por ano-15_06_2023, 03_06_05.png" alt="Valores Totais Gastos, que tiveram seus cartões em algum problema com fraude, por Ano">
+                    <img  class = "imagem_projeto" srcset="imagens/9-Valorestotaisgastoscomflagsdefraudeporano-15_06_202303_06_05.png 1920w" alt="Valores Totais Gastos, que tiveram seus cartões em algum problema com fraude, por Ano">
                     <p class="texto_descricao_projeto">Observa-se que os valores são mais altos próximos a 2007 e 2008, o que poderia ser vinculado ao assunto sobre a crise financeira. Contudo, é essencial salientar que os valores correspondem a uma mínima fração do volume de gastos durante o mesmo período de tempo.</p>
                     <p class="texto_descricao_projeto">Logo, seria interessante avaliar mais a fundo especificamente os anos de maior pico e cruzar com os principais perfis avaliados, além de adquirir mais dados para se chegar ema alguma conclusão sobre a relação entre os gastos e fraudes e sua aparência quase cíclica.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>10 - Taxa de Fraude nas Transações pelo MCC (Merchant category codes - Atividade do Negócio)</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/Taxa de Fraude nas Transações por MCC-17_06_2023, 00_35_02.png" alt="Taxa de Fraude nas Transações pelo MCC (Merchant category codes - Atividade do Negócio)">
+                    <img  class = "imagem_projeto" srcset="imagens/TaxadeFraudenasTransaçõesporMCC-17_06_202300_35_02.png 1920w" alt="Taxa de Fraude nas Transações pelo MCC (Merchant category codes - Atividade do Negócio)">
                     <p class="texto_descricao_projeto">O gráfico demonstra as 10 principais atividades econômicas que os estabelecimentos mais envolvidos em transações fraudulentas atuam. De acordo com o <a class = "link_projeto" href="https://www.citibank.com/tts/solutions/commercial-cards/assets/docs/govt/Merchant-Category-Codes.pdf">Guia de MCC do Citibank</a>, pode-se notar que os dois primeiros correspondem respectivamente a <strong>Jogos Eletrônicos e Lojas de Instrumentos Musicais, seguidos por lojas de objetos para casa; computadores e periféricos; e pedras preciosas, relógios e jóias</strong>.</p>
                     <p class="texto_descricao_projeto">O resultado se mostra anti-intuitivo, visto que a expectativa comum é a de lojas de roupas, outlets, pelo maior volume. Contudo, é interessante analisar que em relação a área de jogos eletrônicos, a taxa de fraude em relação as transações totais ultrapassa os 10%, o que quer dizer que uma em cada dez transações se mostra fraudulenta.</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>11 - Taxa de Fraude nas Transações pelo Estado do Estabelecimento</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/Taxa_de_fraude_por_estado.png" alt="Taxa de Fraude nas Transações pelo Estado do Estabelecimento">
+                    <img  class = "imagem_projeto" srcset="imagens/Taxa_de_fraude_por_estado.png 1920w" alt="Taxa de Fraude nas Transações pelo Estado do Estabelecimento">
                     <p class="texto_descricao_projeto">Essa é uma demonstração em relação ao total de transações, o que justifica os valores percentualmente tão baixos. Contudo, a massa quantitativa que separa em contabilização os diferentes estados segue a mesma tendência de distribuição, o que se leva ao entendimento que <strong>Ohio, ALaska, Havaí e Nebraska</strong> são 4 dos estados com maior volume de transações que sofreram alguma fraude.</p>
                 </div>
             </div>
@@ -416,7 +416,7 @@
                 <h2 class="texto_principal_projeto">Arquitetura de Dados</h2>
                 <div class="content1">
                     <p class="texto_descricao_projeto">Nessa etapa, o objetivo foi desenhar a arquitetura, isto é, o caminho pelo qual os dados partiriam desde o computador até a disponibilização para a ferramenta de visualização de dados. Abaixo, pode-se observar o desenho dessa arquitetura:</p>
-                    <img  class = "imagem_projeto" src="imagens/HR_project.drawio.png" alt="Arquitetura dos Dados">
+                    <img  class = "imagem_projeto" srcset="imagens/HR_project.drawio.png 1920w" alt="Arquitetura dos Dados">
                     <ul class="lista_item_projeto">
                         <li class="item_projeto">Tudo se inicia com os arquivos .xlsx, .json e um arquivo do MySQL que são adicionados ao Data Lake, correspondido aqui pelo Minio.</li>
                         <li class="item_projeto">Após isso, os dados são processados através de <b>dags</b> no Airflow, juntando esses diferentes arquivos em um único arquivo performático com extensão .parquet</li>
@@ -491,48 +491,48 @@
                 <div class="content1">
                     <p class="texto_descricao_projeto">Na etapa de Análise Exploratória de Dados foram descobertos os vários insights importantes abaixo, através de cruzamentos entre os dados utilizando as bibliotecas disponíveis no Python:</p>
                     <p class="texto_descricao_projeto indice_analise"><strong>1 - Matriz de Correlação (Heatmap)</strong> </p>
-                    <img  class = "imagem_projeto" src="imagens/heatmap_analise.png" alt="Matriz de Correlação (Heatmap)">
+                    <img  class = "imagem_projeto" srcset="imagens/heatmap_analise.png 1920w" alt="Matriz de Correlação (Heatmap)">
                     <li class="item_projeto">Existe uma correlação positiva entre os atributos projectCount e Evaluation.</li>
                     <li class="item_projeto">Faz sentido que empregados que estão envolvidos em mais projetos, trabalham mais e tem melhor avaliação.</li>
                     <li class="item_projeto">Existe uma correlação negativa entre os atributos satisfaction e turnover.</li>
                     <li class="item_projeto">Podemos assumir que empregados que mais deixam a empresa estão menos satisfeitos.</li>
                     <p class="texto_descricao_projeto indice_analise"><strong>2 - Distribuição dos Atributos</strong> </p>
-                    <img  class = "imagem_projeto" src="imagens/distribuicao_atributos.png" alt="Distribuição dos Atributos">
+                    <img  class = "imagem_projeto" srcset="imagens/distribuicao_atributos.png 1920w" alt="Distribuição dos Atributos">
                     <p class="texto_descricao_projeto">Examinando a distribuição de alguns atributos do conjunto de dados:</p>
                     <li class="item_projeto">Satisfaction - Existe um pico de empregados com baixa satisfação, mas a maior concentração está em 60 a 80.</li>
                     <li class="item_projeto">Evaluation - Temos uma distribuição bimodal de empregados com avaliações baixas, menor que de 60 e altas, maior que 80.</li>
                     <li class="item_projeto">AverageMonthlyHours - A concentração da quantidade de horas trabalhadas nos últimos 3 meses está ao redor da média em 275 horas.</li>
                     <p class="texto_descricao_projeto indice_analise"><strong>3 - Salário x Turnover</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/turnover_salario.png" alt="Salário x Turnover">
+                    <img  class = "imagem_projeto" srcset ="imagens/turnover_salario.png 1920w" alt="Salário x Turnover">
                     <p class="texto_descricao_projeto">Analisando-se a relação entre salário e turnover no conjunto de dados:</p>
                     <li class="item_projeto">A maioria dos empregados que saíram tinha salário baixo ou médio.</li>
                     <li class="item_projeto">Quase nenhum empregado com alto salário deixou a empresa.</li>
                     <p class="texto_descricao_projeto indice_analise"><strong>4 - (Departamento x Turnover) e (Departamento x Salários)</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/turnover_departamentos1.png" alt="Departamento x Turnover">
-                    <img  class = "imagem_projeto" src="imagens/departamentos_salario.png" alt="Departamento x Turnover">
+                    <img  class = "imagem_projeto" srcset="imagens/turnover_departamentos1.png 1920w" alt="Departamento x Turnover">
+                    <img  class = "imagem_projeto" srcset="imagens/departamentos_salario.png 1920w" alt="Departamento x Turnover">
                     <p class="texto_descricao_projeto">Analisando-se mais informações sobre os departamentos da empresa:</p>
                     <li class="item_projeto">Os departamentos de vendas, técnico e suporte são top 3 departamentos com maior índice de turnover.</li>
                     <li class="item_projeto">O departamento management tem o menor volume de turnover.</li>
                     <p class="texto_descricao_projeto indice_analise"><strong>5 - Quantidade de Projetos x Turnover</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/turnover_numprojetos.png" alt="Quantidade de Projetos x Turnover">
+                    <img  class = "imagem_projeto" srcset="imagens/turnover_numprojetos.png 1920w" alt="Quantidade de Projetos x Turnover">
                     <p class="texto_descricao_projeto">Insights interessantes que se podem encontrar aqui:</p>
                     <li class="item_projeto">Mais da metade dos empregados com 2,6 e 7 projetos deixam a empresa.</li>
                     <li class="item_projeto">A maioria dos empregados que permancem na empresa estão envolvidos de 3 à 5 projetos.</li>
                     <li class="item_projeto">Todos os empregados que estavam inseridos 7 projetos deixaram a empresa.</li>
                     <li class="item_projeto">Existe uma pequena tendência de crescimento no índice de turnover em relação à quantidade de projetos.</li>
                     <p class="texto_descricao_projeto indice_analise"><strong>6 - Avaliação x Turnover</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/distribuicao_nota_avaliacao_turnover.png" alt="Avaliação x Turnover">
+                    <img  class = "imagem_projeto" srcset="imagens/distribuicao_nota_avaliacao_turnover.png 1920w" alt="Avaliação x Turnover">
                     <p class="texto_descricao_projeto">Insights interessantes que se podem encontrar aqui:</p>
                     <li class="item_projeto">Temos uma distribuição bimodal para o conjunto que deixou a empresa.</li>
                     <li class="item_projeto">Colaboradores com baixa performance tendem a deixar a empresa.</li>
                     <li class="item_projeto">Colaboradores com alta performance tendem a deixar a empresa.</li>
                     <li class="item_projeto">O ponto ideal para os funcionários que permaneceram está dentro da avaliação de 60 à 80.</li>
                     <p class="texto_descricao_projeto indice_analise"><strong>7 -Satisfação x Turnover</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/distribuicao_satisfacao_turnover.png" alt="Avaliação x Avaliação x Turnover">
+                    <img  class = "imagem_projeto" srcset="imagens/distribuicao_satisfacao_turnover.png 1920w" alt="Avaliação x Avaliação x Turnover">
                     <li class="item_projeto">Empregados com o nível de satisfação em 20 ou menos tendem a deixar a empresa.</li>
                     <li class="item_projeto">Empregados com o nível de satisfação em até 50 tem maior probabilidade de deixar a empresa também.</li>
                     <p class="texto_descricao_projeto indice_analise"><strong>8 - Avaliação x Quantidade de Projetos</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/numprojeto_avaliacao.png" alt = "Avaliação x Quantidade de Projetos">
+                    <img  class = "imagem_projeto" srcset="imagens/numprojeto_avaliacao.png 1920w" alt = "Avaliação x Quantidade de Projetos">
                     <li class="item_projeto">Há um aumento na avaliação para os funcionários que realizaram mais projetos dentro do grupo de quem deixou a empresa.</li>
                     <li class="item_projeto">Para o grupo de pessoas que permaneceram na empresa, os empregados tiveram uma pontuação de avaliação consistente, apesar do aumento nas contagens de projetos.</li>
                     <li class="item_projeto">Empregados que permaneceram na empresa tiveram uma avaliação média em torno de 70%, mesmo com o número de projetos crescendo.</li>
@@ -540,7 +540,7 @@
                     <li class="item_projeto">Empregados que tinham dois projetos e uma péssima avaliação saíram.</li>
                     <li class="item_projeto">Empregados com mais de 3 projetos e avaliações altas deixaram a empresa.</li>
                     <p class="texto_descricao_projeto indice_analise"><strong>9 -  Avaliação x Satisfação</strong></p>
-                    <img  class = "imagem_projeto" src="imagens/satisfacao_avaliacao.png" alt = "Avaliação x Satisfação">
+                    <img  class = "imagem_projeto" srcset="imagens/satisfacao_avaliacao.png 1920w" alt = "Avaliação x Satisfação">
                     <p class="texto_descricao_projeto">A partir desse cruzamento, pode-se observar 3 diferentes grupos segregados:</p>
                     <p class="texto_descricao_projeto"><strong>Cluster 1 (Empregados insatisfeitos e trabalhadores):</strong> A satisfação foi inferior a 20 e as avaliações foram superiores a 75.</p>
                     <li class="item_projeto">Há um aumento na avaliação para os funcionários que realizaram mais projetos dentro do grupo de quem deixou a empresa.</li>

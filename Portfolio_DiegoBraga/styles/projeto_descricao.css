@@ -167,7 +167,7 @@ display: none;
     color: var(--cor_fundo2);
     list-style-type:disc;
     margin-left: 1rem;
-    line-height: 1.5rem;
+
     
 }
 
@@ -175,6 +175,7 @@ display: none;
     color: var(--cor_fundo2);
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+    line-height: 1.5rem;
 }
 
 .imagem_projeto {
